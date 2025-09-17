@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✈️ 카오락 영상 촬영 지원 OT 자료</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', 'Inter', sans-serif;
+        }
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1a202c;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .day-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-left: 2px solid #e2e8f0;
+        }
+        .timeline-item:last-child {
+            border-left: 2px solid transparent;
+            padding-bottom: 0;
+        }
+        .timeline-icon {
+            position: absolute;
+            left: -0.75rem;
+            top: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #4299e1;
+            color: white;
+        }
+        .youtube-embed {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 0.5rem;
+        }
+        .youtube-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #4a5568;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-800">✈️ 카오락 영상 촬영 지원 OT 자료</h1>
+        </div>
+        <nav class="bg-gray-700 text-white">
+            <div class="container mx-auto px-6">
+                <div class="flex items-center justify-center space-x-4 md:space-x-8 overflow-x-auto py-2">
+                    <a href="#overview" class="nav-link text-sm md:text-base font-medium px-3 py-2 rounded-md">여행 개요</a>
+                    <a href="#schedule" class="nav-link text-sm md:text-base font-medium px-3 py-2 rounded-md">상세 일정</a>
+                    <a href="#accommodation" class="nav-link text-sm md:text-base font-medium px-3 py-2 rounded-md">숙소 정보</a>
+                    <a href="#locations" class="nav-link text-sm md:text-base font-medium px-3 py-2 rounded-md">주요 촬영지</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+        
+        <!-- 1. 한눈에 보는 여행 개요 -->
+        <section id="overview" class="mb-12">
+            <h2 class="section-title">🗓️ 한눈에 보는 여행 개요</h2>
+            <div class="card overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">일자</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">주요 일정</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">숙소</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">9/21 (일)</td>
+                            <td class="px-6 py-4 whitespace-nowrap">인천 출발, 푸켓 도착 후 호텔 이동 및 체크인</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold">아웃리거 카오락 비치 리조트</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">9/22 (월)</td>
+                            <td class="px-6 py-4 whitespace-nowrap">오전 리조트 촬영 / 오후 카오락 내츄럴 전일 투어</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold">아웃리거 카오락 비치 리조트</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">9/23 (화)</td>
+                            <td class="px-6 py-4 whitespace-nowrap">오전 아웃리거 인스펙션 & 촬영 / 아바니+ 이동 & 체크인, 촬영</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold">아바니+ 카오락 리조트</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">9/24 (수)</td>
+                            <td class="px-6 py-4 whitespace-nowrap">오전 아바니+ 리조트 촬영 / 오후 공항 이동 및 푸켓 출발</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold">기내</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">9/25 (목)</td>
+                            <td class="px-6 py-4 whitespace-nowrap">인천 도착</td>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 2. 상세 일정 안내 -->
+        <section id="schedule" class="mb-12">
+            <h2 class="section-title">🗺️ 상세 일정 안내</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- DAY 1 -->
+                <div class="card">
+                    <h3 class="day-title">DAY 1: 9월 21일 (일) - 도착 및 여정의 시작</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">✈️</div>
+                        <p class="font-semibold">16:10 ICN 출발 (OZ725)</p>
+                        <p class="text-sm text-gray-600">20:15 HKT 도착</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🧍</div>
+                        <p class="font-semibold">공항 미팅</p>
+                        <p class="text-sm text-gray-600">2번 게이트 밖, 영문명 'KIM CHANHO' 피켓</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🏨</div>
+                        <p class="font-semibold">호텔 체크인 및 휴식</p>
+                        <p class="text-sm text-gray-600">'아웃리거 카오락 비치 리조트' (약 90분 소요)</p>
+                    </div>
+                </div>
+
+                <!-- DAY 2 -->
+                <div class="card">
+                    <h3 class="day-title">DAY 2: 9월 22일 (월) - 카오락 대자연과의 교감</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🎬</div>
+                        <p class="font-semibold">오전 자유 촬영</p>
+                        <p class="text-sm text-gray-600">'아웃리거 카오락' 내</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🏞️</div>
+                        <p class="font-semibold">11:00 ~ 18:00 카오락 내츄럴 전일 투어</p>
+                        <p class="text-sm text-gray-600">쓰나미 추모관 → 뱀부 래프팅 & 점심 → 바다거북이 체험관 → 왓 타 싸이 & 코끼리 교감</p>
+                    </div>
+                    <div class="timeline-item">
+                         <div class="timeline-icon">🍽️</div>
+                        <p class="font-semibold">저녁 식사</p>
+                        <p class="text-sm text-gray-600">'엣지워터(Edgewater)' 레스토랑</p>
+                    </div>
+                </div>
+
+                <!-- DAY 3 -->
+                <div class="card">
+                    <h3 class="day-title">DAY 3: 9월 23일 (화) - 두 리조트의 매력 탐방</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🎬</div>
+                        <p class="font-semibold">08:00 ~ 11:00 '아웃리거' 인스펙션 및 촬영</p>
+                    </div>
+                    <div class="timeline-item">
+                         <div class="timeline-icon">🏨</div>
+                        <p class="font-semibold">아웃리거 체크아웃 → '아바니+' 이동 및 체크인</p>
+                        <p class="text-sm text-gray-600">Grab/택시 이용 추천</p>
+                    </div>
+                     <div class="timeline-item">
+                         <div class="timeline-icon">🎬</div>
+                        <p class="font-semibold">오후 '아바니+' 촬영</p>
+                    </div>
+                </div>
+
+                <!-- DAY 4 -->
+                <div class="card">
+                    <h3 class="day-title">DAY 4: 9월 24일 (수) - 마지막 촬영 및 귀국</h3>
+                     <div class="timeline-item">
+                         <div class="timeline-icon">🎬</div>
+                        <p class="font-semibold">오전 '아바니+' 추가 촬영</p>
+                    </div>
+                    <div class="timeline-item">
+                         <div class="timeline-icon">🚗</div>
+                        <p class="font-semibold">17:30 공항 샌딩 차량 미팅</p>
+                        <p class="text-sm text-gray-600">아바니+ 리조트 1층 로비</p>
+                    </div>
+                     <div class="timeline-item">
+                         <div class="timeline-icon">✈️</div>
+                        <p class="font-semibold">21:45 HKT 출발 (OZ726)</p>
+                    </div>
+                </div>
+
+                <!-- DAY 5 -->
+                <div class="card">
+                    <h3 class="day-title">DAY 5: 9월 25일 (목) - 도착</h3>
+                    <div class="timeline-item">
+                         <div class="timeline-icon">✈️</div>
+                        <p class="font-semibold">05:55 ICN 도착</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 숙소 정보 -->
+        <section id="accommodation" class="mb-12">
+            <h2 class="section-title">🏨 숙소 정보</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-2">아웃리거 카오락 비치 리조트</h3>
+                    <p class="text-sm text-gray-500 mb-4">Outrigger Khao Lak Beach Resort</p>
+                    <p><span class="font-semibold">숙박 기간:</span> 9/21 (일) ~ 9/23 (화), 2박</p>
+                    <p><span class="font-semibold">객실 타입:</span> 디럭스 가든 발코니</p>
+                    <p class="font-semibold mt-2">포함 내역:</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>2인 조식 포함</li>
+                        <li>1회 저녁 식사 제공 (엣지워터 레스토랑)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-2">아바니+ 카오락 리조트</h3>
+                    <p class="text-sm text-gray-500 mb-4">Avani+ Khao Lak Resort</p>
+                    <p><span class="font-semibold">숙박 기간:</span> 9/23 (화) ~ 9/24 (수), 1박</p>
+                    <p><span class="font-semibold">객실 타입:</span> 프리미어룸, 킹사이즈 침대</p>
+                    <p class="font-semibold mt-2">포함 내역:</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>2인 조식 포함</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 주요 촬영지 소개 -->
+        <section id="locations">
+            <h2 class="section-title">🎬 주요 촬영지 소개 및 특징</h2>
+
+            <!-- 카오락 내츄럴 투어 -->
+            <div class="mb-10">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-700">1) 카오락 내츄럴 전일 투어</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="card">
+                        <h4 class="font-bold text-lg mb-2">🌿 뱀부 래프팅</h4>
+                        <p class="text-sm mb-4">전통 대나무 뗏목을 타고 열대우림 사이를 유유히 흘러가며 원시 자연 속에서 힐링을 경험하는 평화로운 액티비티입니다.</p>
+                        <div class="youtube-embed">
+                            <iframe src="https://www.youtube.com/embed/_FKXewgAHEI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4 class="font-bold text-lg mb-2">🐢 거북이 보호 센터</h4>
+                        <p class="text-sm mb-4">상처 입거나 갓 부화한 아기 바다거북들을 보호하고 자연으로 돌려보내는 의미있는 장소로, 해양 생태계 보전의 중요성을 배울 수 있습니다.</p>
+                        <div class="youtube-embed">
+                            <iframe src="https://www.youtube.com/embed/eM6l27fXn94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4 class="font-bold text-lg mb-2">🐘 코끼리 생츄어리</h4>
+                        <p class="text-sm mb-4">구조된 코끼리들이 자유롭게 생활하도록 돕는 보호 시설에서 먹이주기, 진흙 목욕 등 동등한 입장에서 교감하는 윤리적인 체험을 할 수 있습니다.</p>
+                        <div class="youtube-embed">
+                            <iframe src="https://www.youtube.com/embed/TG7KcfUxfzA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 아웃리거 -->
+            <div class="mb-10">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-700">2) 아웃리거 카오락 비치 리조트</h3>
+                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="card">
+                        <h4 class="font-bold text-lg mb-2">🌊 인피니티 풀 & 방삭 비치</h4>
+                        <p class="text-sm mb-4">안다만 해와 바로 연결되는 인피니티 풀과 깨끗한 백사장이 펼쳐진 방삭 비치에서 카약, 패들보드 등 해양 스포츠를 즐길 수 있습니다.</p>
+                        <div class="youtube-embed mb-2">
+                             <iframe src="https://www.youtube.com/embed/X0P3xzWshdg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                         <div class="youtube-embed">
+                             <iframe src="https://www.youtube.com/embed/ua63ctiuOS4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4 class="font-bold text-lg mb-2">🍽️ 엣지워터 & 말라 키친</h4>
+                        <p class="text-sm mb-4">해변가 '엣지워터'에서 라이브 음악과 함께 낭만적인 선셋을, 열대 정원 전망의 '말라 키친'에서 풍성한 조식 뷔페를 즐길 수 있습니다.</p>
+                        <div class="youtube-embed">
+                             <iframe src="https://www.youtube.com/embed/gS6CMvmLFPM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4 class="font-bold text-lg mb-2">👨‍👩‍👧‍👦 코랄 키즈 클럽 & 마사지 살라</h4>
+                        <p class="text-sm mb-4">실내외 놀이 공간을 갖춘 키즈 클럽과 자연 바람을 맞으며 태국 전통 마사지를 받을 수 있는 수영장 옆 마사지 살라가 있습니다.</p>
+                        <div class="youtube-embed">
+                            <iframe src="https://www.youtube.com/embed/Jy2x06xWRsg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 아바니+ -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-gray-700">3) 아바니+ 카오락 리조트: "모든 세대가 만족하는 액티브 라이프스타일 리조트"</h3>
+                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="card">
+                        <h4 class="font-bold text-lg mb-2">🌊 워터파크 & 4개의 수영장</h4>
+                        <p class="text-sm mb-4">워터 슬라이드를 갖춘 워터파크, 성인 전용 인피니티 풀, 100m 랩 풀 등 각기 다른 컨셉의 수영 시설을 보유하고 있습니다.</p>
+                        <div class="youtube-embed">
+                            <iframe src="https://www.youtube.com/embed/WeZFj7uMO9Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4 class="font-bold text-lg mb-2">💪 AvaniFit & 액티비티</h4>
+                        <p class="text-sm mb-4">24시간 피트니스 센터, 실내외 암벽 등반, 무에타이 링, 스케이트파크 등 전문적인 액티비티 시설이 마련되어 있습니다.</p>
+                        <div class="youtube-embed">
+                            <iframe src="https://www.youtube.com/embed/rYyICxEUWmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4 class="font-bold text-lg mb-2">🍽️ 다채로운 F&B & 키즈클럽</h4>
+                        <p class="text-sm mb-4">정통 이탈리안, 비치 하우스 등 다채로운 미식 경험과 2층 규모의 키즈클럽, 미니 동물원 등 프리미엄 가족 시설을 갖추고 있습니다.</p>
+                        <div class="youtube-embed">
+                            <iframe src="https://www.youtube.com/embed/Lp9UhkDKERU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="bg-gray-700 text-white mt-12 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Khao Lak Filming Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

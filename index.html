@@ -3,374 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✈️ 카오락 영상 촬영 지원 OT 자료</title>
+    <title>카오락 촬영 일정 가이드</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: 'Noto Sans KR', 'Inter', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
+            scroll-behavior: smooth;
         }
-        .section-title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #1a202c;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 0.5rem;
+        .page {
+            display: none;
         }
-        .day-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #2d3748;
-            margin-bottom: 1rem;
+        .page.active {
+            display: block;
         }
-        .card {
-            background-color: #ffffff;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
+        .timeline-item .icon {
+            background-color: white;
+            border: 2px solid;
         }
-        .timeline-item {
-            position: relative;
-            padding-left: 2.5rem;
-            padding-bottom: 1.5rem;
-            border-left: 2px solid #e2e8f0;
-        }
-        .timeline-item:last-child {
-            border-left: 2px solid transparent;
-            padding-bottom: 0;
-        }
-        .timeline-icon {
-            position: absolute;
-            left: -0.75rem;
-            top: 0;
-            width: 1.5rem;
-            height: 1.5rem;
-            border-radius: 9999px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #4299e1;
-            color: white;
-        }
-        .youtube-embed {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: #000;
-            border-radius: 0.5rem;
-        }
-        .youtube-embed iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .nav-link {
-            transition: all 0.3s ease;
-        }
-        .nav-link:hover {
-            background-color: #4a5568;
-            color: #ffffff;
+        /* Gradient text for guide titles */
+        .outrigger-gradient { background: linear-gradient(to right, #0077b6, #00b4d8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .avani-gradient { background: linear-gradient(to right, #d4af37, #f2c94c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .tour-gradient { background: linear-gradient(to right, #1e8449, #2ecc71); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 0.5rem; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .sticky-header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.9); }
+        .request-box {
+            background-color: #f3f4f6;
+            border-left: 4px solid #4b5563;
+            padding: 12px;
+            font-style: italic;
+            color: #4b5563;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-100 text-gray-800">
 
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4">
-            <h1 class="text-2xl md:text-3xl font-bold text-gray-800">✈️ 카오락 영상 촬영 지원 OT 자료</h1>
-        </div>
-        <nav class="bg-gray-700 text-white">
-            <div class="container mx-auto px-6">
-                <div class="flex items-center justify-center space-x-4 md:space-x-8 overflow-x-auto py-2">
-                    <a href="#overview" class="nav-link text-sm md:text-base font-medium px-3 py-2 rounded-md">여행 개요</a>
-                    <a href="#schedule" class="nav-link text-sm md:text-base font-medium px-3 py-2 rounded-md">상세 일정</a>
-                    <a href="#accommodation" class="nav-link text-sm md:text-base font-medium px-3 py-2 rounded-md">숙소 정보</a>
-                    <a href="#locations" class="nav-link text-sm md:text-base font-medium px-3 py-2 rounded-md">주요 촬영지</a>
+    <!-- Main Schedule Page -->
+    <div id="main-page" class="page active">
+        <header class="bg-white shadow-md p-4 sticky top-0 z-10">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">Khao Lak Shooting Schedule</h1>
+                <p class="text-sm sm:text-md text-gray-500 mt-1">2025. 09. 21 ~ 2025. 09. 24</p>
+            </div>
+        </header>
+
+        <main class="container mx-auto p-4 max-w-4xl">
+            <div class="space-y-8">
+
+                <!-- Day 1: 9월 21일 (일) -->
+                <div>
+                    <h2 class="text-xl font-bold mb-4 text-indigo-600">Day 1: 2025. 09. 21 (Sun)</h2>
+                    <div class="relative border-l-2 border-indigo-200 pl-8 space-y-8">
+                        <!-- 공항 픽업 -->
+                        <div class="timeline-item">
+                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-indigo-500 border-indigo-500">
+                                <i class="fas fa-plane-arrival"></i>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <p class="font-bold text-lg">20:15 - Phuket Airport Arrival & Pickup</p>
+                                <div class="text-sm text-gray-600 mt-2 space-y-2">
+                                    <p><i class="fas fa-ticket-alt w-4 mr-1"></i><strong>Reservation No.:</strong> 146-108-025 (1)</p>
+                                    <p><i class="fas fa-user-friends w-4 mr-1"></i><strong>Booker:</strong> KIM CHANHO (2 Adults)</p>
+                                    <p><i class="fas fa-plane w-4 mr-1"></i><strong>Flight:</strong> OZ 725</p>
+                                    <p><i class="fas fa-car w-4 mr-1"></i><strong>Vehicle:</strong> Van / Driver K'Aek (+66 81-895-7211)</p>
+                                    <p><i class="fas fa-flag-checkered w-4 mr-1"></i><strong>Destination:</strong> Outrigger Khao Lak Beach Resort</p>
+                                    <div class="mt-2">
+                                        <p class="font-semibold"><i class="fas fa-map-marker-alt w-4 mr-1"></i>Meeting Point</p>
+                                        <p class="pl-5">국제선 출국장에서 짐찾고 나오신 후 2번 게이트 밖 분리대에서 성함 확인. 찾기 힘드실 경우 비상 연락망으로 연락주세요.</p>
+                                        <img src="http://product.monkeytravel.com/1076866147/a510d9fa4a5939ebc8b559fab3863c2f.png_3.jpg?w=740&h=0" alt="미팅장소 이미지" class="mt-2 rounded-lg shadow-sm w-full">
+                                    </div>
+                                    <p><i class="fas fa-phone w-4 mr-1"></i><strong>Emergency Contact:</strong> 080-709-0500</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 호텔 체크인 -->
+                        <div class="timeline-item">
+                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-indigo-500 border-indigo-500">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <p class="font-bold text-lg">Check-in @ Outrigger Khao Lak Beach Resort</p>
+                                <div class="text-sm text-gray-600 mt-2 space-y-2">
+                                    <p><i class="fas fa-ticket-alt w-4 mr-1"></i><strong>Reservation No.:</strong> 550744424</p>
+                                    <p><i class="fas fa-user-friends w-4 mr-1"></i><strong>Guest:</strong> Ms. Yoon Ayoung, Mr. Kim/Chanho</p>
+                                    <p><i class="fas fa-bed w-4 mr-1"></i><strong>Room:</strong> Deluxe Garden Balcony (Sep 21 - Sep 23, 2 nights)</p>
+                                    <p><i class="fas fa-concierge-bell w-4 mr-1"></i><strong>Includes:</strong> 2 nights stay, breakfast, 1 complimentary dinner</p>
+                                    <p><i class="fas fa-info-circle w-4 mr-1"></i><strong>Note:</strong> Check-in 14:00, Check-out 12:00</p>
+                                    <p><i class="fas fa-phone w-4 mr-1"></i><strong>Hotel Contact:</strong> +66 (0)76 427100</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2: 9월 22일 (월) -->
+                <div>
+                    <h2 class="text-xl font-bold mb-4 text-teal-600">Day 2: 2025. 09. 22 (Mon)</h2>
+                    <div class="relative border-l-2 border-teal-200 pl-8">
+                        <div class="timeline-item">
+                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-teal-500 border-teal-500">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <p class="font-bold text-lg">Shooting & Inspection @ Outrigger Resort</p>
+                                <div class="text-sm text-gray-600 mt-2 space-y-2">
+                                    <p><i class="far fa-clock w-4 mr-1"></i><strong>11:00</strong> - Resort Inspection</p>
+                                    <p><i class="fas fa-camera-retro w-4 mr-1"></i><strong>Afterwards</strong> - Free Shooting</p>
+                                    <p><i class="fas fa-utensils w-4 mr-1"></i><strong>Dinner</strong> - Edgewater Restaurant</p>
+                                    <div class="request-box mt-2">
+                                        <p class="font-semibold">Request Phrase:</p>
+                                        <p>Hello, I'm from Naeil Tour. We have a pre-arranged appointment for resort photography and inspection today. Could you please check our reservation?</p>
+                                    </div>
+                                </div>
+                                <button onclick="showPage('outrigger-guide')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                                    <i class="fas fa-book-open mr-2"></i>View Outrigger Shooting Guide
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 3: 9월 23일 (화) -->
+                <div>
+                    <h2 class="text-xl font-bold mb-4 text-green-600">Day 3: 2025. 09. 23 (Tue)</h2>
+                    <div class="relative border-l-2 border-green-200 pl-8 space-y-8">
+                        <div class="timeline-item">
+                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-green-500 border-green-500">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <p class="font-bold text-lg">09:00 - Khao Lak Natural Tour</p>
+                                <div class="text-sm text-gray-600 mt-2 space-y-2">
+                                    <p><i class="fas fa-map-pin w-4 mr-1"></i><strong>Pickup:</strong> 09:00, Outrigger Khao Lak Resort Lobby</p>
+                                    <div class="pl-5">
+                                        <p>Tsunami Memorial → Bamboo Rafting & Lunch → Turtle Conservation Center → Wat Tha Sai & Elephant Experience</p>
+                                    </div>
+                                    <p><i class="fas fa-flag-checkered w-4 mr-1"></i><strong>Drop-off:</strong> 16:00, Avani+ Khao Lak Resort</p>
+                                    <p><i class="fas fa-phone w-4 mr-1"></i><strong>Emergency Contact:</strong> 081-693-3933 / KakaoTalk: jec3933</p>
+                                </div>
+                                <button onclick="showPage('tour-guide')" class="mt-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                                    <i class="fas fa-book-open mr-2"></i>View Khao Lak Tour Guide
+                                </button>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-green-500 border-green-500">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <p class="font-bold text-lg">16:00 - Check-in @ Avani+ Khao Lak Resort</p>
+                                <div class="text-sm text-gray-600 mt-2 space-y-2">
+                                    <p><i class="fas fa-ticket-alt w-4 mr-1"></i><strong>Reservation No.:</strong> 146-120-767 (1)</p>
+                                    <p><i class="fas fa-check-circle w-4 mr-1"></i><strong>Confirmation No.:</strong> 828658971</p>
+                                    <p><i class="fas fa-user-friends w-4 mr-1"></i><strong>Guest:</strong> KIM CHANHO (2 Adults)</p>
+                                    <p><i class="fas fa-bed w-4 mr-1"></i><strong>Room:</strong> Premier Room (Double Bed), Breakfast included</p>
+                                    <p><i class="fas fa-info-circle w-4 mr-1"></i><strong>Note:</strong> 18:00 Late Check-out included (Total 1.5 nights)</p>
+                                    <p><i class="fas fa-phone w-4 mr-1"></i><strong>Emergency Contact:</strong> 080-709-0500</p>
+                                </div>
+                                <button onclick="showPage('avani-guide')" class="mt-4 w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                                    <i class="fas fa-book-open mr-2"></i>View Avani Shooting Guide
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 4: 9월 24일 (수) -->
+                <div>
+                    <h2 class="text-xl font-bold mb-4 text-red-600">Day 4: 2025. 09. 24 (Wed)</h2>
+                    <div class="relative border-l-2 border-red-200 pl-8">
+                        <div class="timeline-item">
+                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-red-500 border-red-500">
+                                <i class="fas fa-plane-departure"></i>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <p class="font-bold text-lg">17:30 - Airport Sending</p>
+                                <div class="text-sm text-gray-600 mt-2 space-y-2">
+                                    <p><i class="fas fa-ticket-alt w-4 mr-1"></i><strong>Reservation No.:</strong> 146-120-113 (1)</p>
+                                    <p><i class="fas fa-user-friends w-4 mr-1"></i><strong>Booker:</strong> KIM CHANHO (2 Adults)</p>
+                                    <p><i class="fas fa-car w-4 mr-1"></i><strong>Vehicle:</strong> Van</p>
+                                    <p><i class="fas fa-map-marker-alt w-4 mr-1"></i><strong>Meeting:</strong> Avani+ Resort Lobby</p>
+                                    <p><i class="fas fa-plane w-4 mr-1"></i><strong>Flight:</strong> OZ726</p>
+                                    <p><i class="fas fa-phone w-4 mr-1"></i><strong>Emergency Contact:</strong> 080-709-0500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
+        </main>
+    </div>
 
-    <main class="container mx-auto p-4 md:p-8">
-        
-        <!-- 1. 한눈에 보는 여행 개요 -->
-        <section id="overview" class="mb-12">
-            <h2 class="section-title">🗓️ 한눈에 보는 여행 개요</h2>
-            <div class="card overflow-x-auto">
-                <table class="min-w-full divide-y divide-gray-200">
-                    <thead class="bg-gray-100">
-                        <tr>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">일자</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">주요 일정</th>
-                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-600 uppercase tracking-wider">숙소</th>
-                        </tr>
-                    </thead>
-                    <tbody class="bg-white divide-y divide-gray-200">
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">9/21 (일)</td>
-                            <td class="px-6 py-4 whitespace-nowrap">인천 출발, 푸켓 도착 후 호텔 이동 및 체크인</td>
-                            <td class="px-6 py-4 whitespace-nowrap font-semibold">아웃리거 카오락 비치 리조트</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">9/22 (월)</td>
-                            <td class="px-6 py-4 whitespace-nowrap">오전 리조트 촬영 / 오후 카오락 내츄럴 전일 투어</td>
-                            <td class="px-6 py-4 whitespace-nowrap font-semibold">아웃리거 카오락 비치 리조트</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">9/23 (화)</td>
-                            <td class="px-6 py-4 whitespace-nowrap">오전 아웃리거 인스펙션 & 촬영 / 아바니+ 이동 & 체크인, 촬영</td>
-                            <td class="px-6 py-4 whitespace-nowrap font-semibold">아바니+ 카오락 리조트</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">9/24 (수)</td>
-                            <td class="px-6 py-4 whitespace-nowrap">오전 아바니+ 리조트 촬영 / 오후 공항 이동 및 푸켓 출발</td>
-                            <td class="px-6 py-4 whitespace-nowrap font-semibold">기내</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap font-medium">9/25 (목)</td>
-                            <td class="px-6 py-4 whitespace-nowrap">인천 도착</td>
-                            <td class="px-6 py-4 whitespace-nowrap font-semibold">-</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- Outrigger Guide Page -->
+    <div id="outrigger-guide" class="page">
+        <header class="shadow-md p-4 sticky-header">
+            <div class="container mx-auto max-w-7xl flex justify-between items-center">
+                <button onclick="showPage('main-page')" class="text-blue-600 hover:text-blue-800"><i class="fas fa-arrow-left fa-lg"></i></button>
+                <div class="text-center">
+                    <h1 class="text-xl sm:text-2xl font-bold text-gray-800">Outrigger Khao Lak Shooting Guide</h1>
+                </div>
+                <div class="w-8"></div>
             </div>
-        </section>
-
-        <!-- 2. 상세 일정 안내 -->
-        <section id="schedule" class="mb-12">
-            <h2 class="section-title">🗺️ 상세 일정 안내</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- DAY 1 -->
-                <div class="card">
-                    <h3 class="day-title">DAY 1: 9월 21일 (일) - 도착 및 여정의 시작</h3>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">✈️</div>
-                        <p class="font-semibold">16:10 ICN 출발 (OZ725)</p>
-                        <p class="text-sm text-gray-600">20:15 HKT 도착</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">🧍</div>
-                        <p class="font-semibold">공항 미팅</p>
-                        <p class="text-sm text-gray-600">2번 게이트 밖, 영문명 'KIM CHANHO' 피켓</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">🏨</div>
-                        <p class="font-semibold">호텔 체크인 및 휴식</p>
-                        <p class="text-sm text-gray-600">'아웃리거 카오락 비치 리조트' (약 90분 소요)</p>
-                    </div>
+        </header>
+        <main class="container mx-auto p-4 sm:p-6 max-w-7xl space-y-8">
+            <!-- 객실 Section -->
+            <section id="rooms" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">Rooms</h2>
+                <div class="space-y-8">
+                    <div><h3 class="text-lg font-semibold mb-3 text-gray-700">Deluxe Garden Balcony</h3><div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/GA9-IXpGad4" frameborder="0" allowfullscreen></iframe></div></div>
+                    <div><h3 class="text-lg font-semibold mb-3 text-gray-700">Garden Villa</h3><div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/ztO5R69Aufg" frameborder="0" allowfullscreen></iframe></div></div>
+                    <div><h3 class="text-lg font-semibold mb-3 text-gray-700">Pool Villa</h3><div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/BaoJbQl0Ijs" frameborder="0" allowfullscreen></iframe></div></div>
                 </div>
-
-                <!-- DAY 2 -->
-                <div class="card">
-                    <h3 class="day-title">DAY 2: 9월 22일 (월) - 카오락 대자연과의 교감</h3>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">🎬</div>
-                        <p class="font-semibold">오전 자유 촬영</p>
-                        <p class="text-sm text-gray-600">'아웃리거 카오락' 내</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">🏞️</div>
-                        <p class="font-semibold">11:00 ~ 18:00 카오락 내츄럴 전일 투어</p>
-                        <p class="text-sm text-gray-600">쓰나미 추모관 → 뱀부 래프팅 & 점심 → 바다거북이 체험관 → 왓 타 싸이 & 코끼리 교감</p>
-                    </div>
-                    <div class="timeline-item">
-                         <div class="timeline-icon">🍽️</div>
-                        <p class="font-semibold">저녁 식사</p>
-                        <p class="text-sm text-gray-600">'엣지워터(Edgewater)' 레스토랑</p>
-                    </div>
+            </section>
+            <!-- 수영장 Section -->
+            <section id="pool" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">Pool</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/49d92062_z.jpg" alt="수영장 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/5bf3f20f_z.jpg" alt="수영장 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/71c9fd48_z.jpg" alt="수영장 3" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
                 </div>
-
-                <!-- DAY 3 -->
-                <div class="card">
-                    <h3 class="day-title">DAY 3: 9월 23일 (화) - 두 리조트의 매력 탐방</h3>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">🎬</div>
-                        <p class="font-semibold">08:00 ~ 11:00 '아웃리거' 인스펙션 및 촬영</p>
-                    </div>
-                    <div class="timeline-item">
-                         <div class="timeline-icon">🏨</div>
-                        <p class="font-semibold">아웃리거 체크아웃 → '아바니+' 이동 및 체크인</p>
-                        <p class="text-sm text-gray-600">Grab/택시 이용 추천</p>
-                    </div>
-                     <div class="timeline-item">
-                         <div class="timeline-icon">🎬</div>
-                        <p class="font-semibold">오후 '아바니+' 촬영</p>
-                    </div>
+                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/X0P3xzWshdg" frameborder="0" allowfullscreen></iframe></div>
+            </section>
+            <!-- 편의시설, 액티비티, 다이닝, 해변 Sections (Content from provided file) -->
+             <section id="amenities" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">Amenities</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/5ce2cf99_z.jpg" alt="편의시설 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-square">
+                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/4d8f493b_z.jpg" alt="편의시설 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-square">
+                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/b8cf037a_z.jpg" alt="편의시설 3" class="rounded-lg shadow-md w-full h-auto object-cover aspect-square">
+                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/7fdbcca8_z.jpg" alt="편의시설 4" class="rounded-lg shadow-md w-full h-auto object-cover aspect-square">
                 </div>
-
-                <!-- DAY 4 -->
-                <div class="card">
-                    <h3 class="day-title">DAY 4: 9월 24일 (수) - 마지막 촬영 및 귀국</h3>
-                     <div class="timeline-item">
-                         <div class="timeline-icon">🎬</div>
-                        <p class="font-semibold">오전 '아바니+' 추가 촬영</p>
-                    </div>
-                    <div class="timeline-item">
-                         <div class="timeline-icon">🚗</div>
-                        <p class="font-semibold">17:30 공항 샌딩 차량 미팅</p>
-                        <p class="text-sm text-gray-600">아바니+ 리조트 1층 로비</p>
-                    </div>
-                     <div class="timeline-item">
-                         <div class="timeline-icon">✈️</div>
-                        <p class="font-semibold">21:45 HKT 출발 (OZ726)</p>
-                    </div>
+            </section>
+            <section id="dining" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">Dining/Bar</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/ca7a7a82_z.jpg" alt="다이닝 1" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/b0ec3d36_z.jpg" alt="다이닝 2" class="rounded-lg shadow-md w-full h-auto object-cover">
                 </div>
-
-                <!-- DAY 5 -->
-                <div class="card">
-                    <h3 class="day-title">DAY 5: 9월 25일 (목) - 도착</h3>
-                    <div class="timeline-item">
-                         <div class="timeline-icon">✈️</div>
-                        <p class="font-semibold">05:55 ICN 도착</p>
-                    </div>
+                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/gS6CMvmLFPM" frameborder="0" allowfullscreen></iframe></div>
+            </section>
+            <section id="beach" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">Beach</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/d633c003_z.jpg" alt="해변 1" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/860699b2_z.jpg" alt="해변 2" class="rounded-lg shadow-md w-full h-auto object-cover">
                 </div>
+                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/ua63ctiuOS4" frameborder="0" allowfullscreen></iframe></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Avani Guide Page -->
+    <div id="avani-guide" class="page">
+        <header class="shadow-md p-4 sticky-header">
+            <div class="container mx-auto max-w-7xl flex justify-between items-center">
+                <button onclick="showPage('main-page')" class="text-yellow-600 hover:text-yellow-800"><i class="fas fa-arrow-left fa-lg"></i></button>
+                <div class="text-center">
+                    <h1 class="text-xl sm:text-2xl font-bold text-gray-800">Avani+ Khao Lak Shooting Guide</h1>
+                </div>
+                <div class="w-8"></div>
             </div>
-        </section>
+        </header>
+        <main class="container mx-auto p-4 sm:p-6 max-w-7xl space-y-8">
+            <!-- 풍경, 해변, 워터파크, 다이닝 Sections (Content from provided file) -->
+            <section id="scenery" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">Resort Scenery</h2>
+                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/ZYvggJANiEA" frameborder="0" allowfullscreen></iframe></div>
+            </section>
+            <section id="beach-avani" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">Resort Beach</h2>
+                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/RhlTNYkLgcc" frameborder="0" allowfullscreen></iframe></div>
+            </section>
+            <section id="waterpark" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">Waterpark & Pool</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/48b67cc8_z.jpg" alt="워터파크 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/99452ca9_z.jpg" alt="워터파크 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                </div>
+                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/WeZFj7uMO9Q" frameborder="0" allowfullscreen></iframe></div>
+            </section>
+             <section id="dining-avani" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">Dining</h2>
+                 <p class="text-center text-gray-600 mb-4">Elements & The Beach House</p>
+                <div class="flex justify-center">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/233de7c0_z.jpg" alt="다이닝" class="rounded-lg shadow-md max-w-full md:max-w-2xl h-auto object-cover">
+                </div>
+            </section>
+             <section id="fitness" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">Fitness Center</h2>
+                <div class="flex justify-center mb-6">
+                     <img src="https://thai.monkeytravel.com/attach/ckeditor/MONKEY/202407/o_1i2dv6ofoglo9ojtf61p2ma5pa.png?w=740&h=0" alt="헬스장" class="rounded-lg shadow-md max-w-full md:max-w-2xl h-auto object-cover">
+                </div>
+                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/rYyICxEUWmM" frameborder="0" allowfullscreen></iframe></div>
+            </section>
+        </main>
+    </div>
 
-        <!-- 3. 숙소 정보 -->
-        <section id="accommodation" class="mb-12">
-            <h2 class="section-title">🏨 숙소 정보</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="card">
-                    <h3 class="text-xl font-bold mb-2">아웃리거 카오락 비치 리조트</h3>
-                    <p class="text-sm text-gray-500 mb-4">Outrigger Khao Lak Beach Resort</p>
-                    <p><span class="font-semibold">숙박 기간:</span> 9/21 (일) ~ 9/23 (화), 2박</p>
-                    <p><span class="font-semibold">객실 타입:</span> 디럭스 가든 발코니</p>
-                    <p class="font-semibold mt-2">포함 내역:</p>
-                    <ul class="list-disc list-inside text-gray-700">
-                        <li>2인 조식 포함</li>
-                        <li>1회 저녁 식사 제공 (엣지워터 레스토랑)</li>
+    <!-- Tour Guide Page -->
+    <div id="tour-guide" class="page">
+        <header class="shadow-md p-4 sticky-header">
+            <div class="container mx-auto max-w-7xl flex justify-between items-center">
+                <button onclick="showPage('main-page')" class="text-green-600 hover:text-green-800"><i class="fas fa-arrow-left fa-lg"></i></button>
+                <div class="text-center">
+                    <h1 class="text-xl sm:text-2xl font-bold text-gray-800">Khao Lak Natural Tour Guide</h1>
+                </div>
+                <div class="w-8"></div>
+            </div>
+        </header>
+        <main class="container mx-auto p-4 sm:p-6 max-w-7xl space-y-8">
+            <!-- 래프팅, 거북이, 코끼리, 준비물 Sections (Content from provided file) -->
+            <section id="rafting" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center tour-gradient">Bamboo Rafting</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <img src="https://www.tourbuy4u.com/uploads/product/prd_new_238_6401914880be0_1677824328.jpg" alt="뱀부 래프팅 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                    <img src="https://thai.monkeytravel.com/attach/product/MONKEY/extraKR/descImage/202405/o_1hursevne4261vqe4lnvtjd2a14.jpeg" alt="뱀부 래프팅 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                </div>
+                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/OnU6ncRJxEM" frameborder="0" allowfullscreen></iframe></div>
+            </section>
+            <section id="turtle" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center tour-gradient">Turtle Sanctuary</h2>
+                <div class="flex justify-center mb-6">
+                    <img src="https://d2mgzmtdeipcjp.cloudfront.net/files/good/2024/03/12/17102139630697.jpg" alt="거북이 체험장" class="rounded-lg shadow-md max-w-full md:max-w-2xl h-auto object-cover">
+                </div>
+                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/eM6l27fXn94" frameborder="0" allowfullscreen></iframe></div>
+            </section>
+            <section id="elephant" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center tour-gradient">Elephant Sanctuary</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <img src="https://thumb.tidesquare.com/tour/public/product/PRV3000000013/PRD3001128830/origin/20230907100902302_wBheu.jpg?type=wide" alt="코끼리 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                    <img src="https://thumb.tidesquare.com/tour/public/product/PRV3000000013/PRD3001128830/origin/20230907100901486_8uQI3.jpg?type=wide" alt="코끼리 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                    <img src="https://static.hanatour.com/product-basic/2022/12/12/04509lk8i0/large.jpg" alt="코끼리 3" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                </div>
+                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/q2XkYSrMkog" frameborder="0" allowfullscreen></iframe></div>
+            </section>
+            <section id="preparation" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center tour-gradient">What to Bring</h2>
+                <div class="max-w-2xl mx-auto">
+                    <ul class="list-disc list-inside space-y-3 text-gray-700 bg-gray-50 p-6 rounded-md">
+                        <li>Rash guard/swimsuit, extra clothes</li>
+                        <li>Beach towel (rent from hotel)</li>
+                        <li>Sunscreen, hat, sunglasses</li>
+                        <li>Waterproof bag (for phone, etc.)</li>
+                        <li>Some cash (for tips, snacks, etc.)</li>
                     </ul>
                 </div>
-                <div class="card">
-                    <h3 class="text-xl font-bold mb-2">아바니+ 카오락 리조트</h3>
-                    <p class="text-sm text-gray-500 mb-4">Avani+ Khao Lak Resort</p>
-                    <p><span class="font-semibold">숙박 기간:</span> 9/23 (화) ~ 9/24 (수), 1박</p>
-                    <p><span class="font-semibold">객실 타입:</span> 프리미어룸, 킹사이즈 침대</p>
-                    <p class="font-semibold mt-2">포함 내역:</p>
-                    <ul class="list-disc list-inside text-gray-700">
-                        <li>2인 조식 포함</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. 주요 촬영지 소개 -->
-        <section id="locations">
-            <h2 class="section-title">🎬 주요 촬영지 소개 및 특징</h2>
-
-            <!-- 카오락 내츄럴 투어 -->
-            <div class="mb-10">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-700">1) 카오락 내츄럴 전일 투어</h3>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    <div class="card">
-                        <h4 class="font-bold text-lg mb-2">🌿 뱀부 래프팅</h4>
-                        <p class="text-sm mb-4">전통 대나무 뗏목을 타고 열대우림 사이를 유유히 흘러가며 원시 자연 속에서 힐링을 경험하는 평화로운 액티비티입니다.</p>
-                        <div class="youtube-embed">
-                            <iframe src="https://www.youtube.com/embed/_FKXewgAHEI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4 class="font-bold text-lg mb-2">🐢 거북이 보호 센터</h4>
-                        <p class="text-sm mb-4">상처 입거나 갓 부화한 아기 바다거북들을 보호하고 자연으로 돌려보내는 의미있는 장소로, 해양 생태계 보전의 중요성을 배울 수 있습니다.</p>
-                        <div class="youtube-embed">
-                            <iframe src="https://www.youtube.com/embed/eM6l27fXn94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4 class="font-bold text-lg mb-2">🐘 코끼리 생츄어리</h4>
-                        <p class="text-sm mb-4">구조된 코끼리들이 자유롭게 생활하도록 돕는 보호 시설에서 먹이주기, 진흙 목욕 등 동등한 입장에서 교감하는 윤리적인 체험을 할 수 있습니다.</p>
-                        <div class="youtube-embed">
-                            <iframe src="https://www.youtube.com/embed/TG7KcfUxfzA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 아웃리거 -->
-            <div class="mb-10">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-700">2) 아웃리거 카오락 비치 리조트</h3>
-                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    <div class="card">
-                        <h4 class="font-bold text-lg mb-2">🌊 인피니티 풀 & 방삭 비치</h4>
-                        <p class="text-sm mb-4">안다만 해와 바로 연결되는 인피니티 풀과 깨끗한 백사장이 펼쳐진 방삭 비치에서 카약, 패들보드 등 해양 스포츠를 즐길 수 있습니다.</p>
-                        <div class="youtube-embed mb-2">
-                             <iframe src="https://www.youtube.com/embed/X0P3xzWshdg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                         <div class="youtube-embed">
-                             <iframe src="https://www.youtube.com/embed/ua63ctiuOS4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4 class="font-bold text-lg mb-2">🍽️ 엣지워터 & 말라 키친</h4>
-                        <p class="text-sm mb-4">해변가 '엣지워터'에서 라이브 음악과 함께 낭만적인 선셋을, 열대 정원 전망의 '말라 키친'에서 풍성한 조식 뷔페를 즐길 수 있습니다.</p>
-                        <div class="youtube-embed">
-                             <iframe src="https://www.youtube.com/embed/gS6CMvmLFPM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4 class="font-bold text-lg mb-2">👨‍👩‍👧‍👦 코랄 키즈 클럽 & 마사지 살라</h4>
-                        <p class="text-sm mb-4">실내외 놀이 공간을 갖춘 키즈 클럽과 자연 바람을 맞으며 태국 전통 마사지를 받을 수 있는 수영장 옆 마사지 살라가 있습니다.</p>
-                        <div class="youtube-embed">
-                            <iframe src="https://www.youtube.com/embed/Jy2x06xWRsg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 아바니+ -->
-            <div>
-                <h3 class="text-2xl font-semibold mb-4 text-gray-700">3) 아바니+ 카오락 리조트: "모든 세대가 만족하는 액티브 라이프스타일 리조트"</h3>
-                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    <div class="card">
-                        <h4 class="font-bold text-lg mb-2">🌊 워터파크 & 4개의 수영장</h4>
-                        <p class="text-sm mb-4">워터 슬라이드를 갖춘 워터파크, 성인 전용 인피니티 풀, 100m 랩 풀 등 각기 다른 컨셉의 수영 시설을 보유하고 있습니다.</p>
-                        <div class="youtube-embed">
-                            <iframe src="https://www.youtube.com/embed/WeZFj7uMO9Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4 class="font-bold text-lg mb-2">💪 AvaniFit & 액티비티</h4>
-                        <p class="text-sm mb-4">24시간 피트니스 센터, 실내외 암벽 등반, 무에타이 링, 스케이트파크 등 전문적인 액티비티 시설이 마련되어 있습니다.</p>
-                        <div class="youtube-embed">
-                            <iframe src="https://www.youtube.com/embed/rYyICxEUWmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4 class="font-bold text-lg mb-2">🍽️ 다채로운 F&B & 키즈클럽</h4>
-                        <p class="text-sm mb-4">정통 이탈리안, 비치 하우스 등 다채로운 미식 경험과 2층 규모의 키즈클럽, 미니 동물원 등 프리미엄 가족 시설을 갖추고 있습니다.</p>
-                        <div class="youtube-embed">
-                            <iframe src="https://www.youtube.com/embed/Lp9UhkDKERU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-    </main>
-
-    <footer class="bg-gray-700 text-white mt-12 py-6">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 Khao Lak Filming Project. All Rights Reserved.</p>
-        </div>
-    </footer>
+            </section>
+        </main>
+    </div>
 
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
             });
-        });
+            // Show the target page
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+                window.scrollTo(0, 0); // Scroll to top when page changes
+            }
+        }
     </script>
 </body>
 </html>
+

@@ -355,18 +355,40 @@
     </div>
 
     <script>
-        function showPage(pageId) {
-            // Hide all pages
+        // The function that actually changes the visible page
+        function setVisiblePage(pageId) {
             document.querySelectorAll('.page').forEach(page => {
                 page.classList.remove('active');
             });
-            // Show the target page
             const targetPage = document.getElementById(pageId);
             if (targetPage) {
                 targetPage.classList.add('active');
-                window.scrollTo(0, 0); // Scroll to top when page changes
+                window.scrollTo(0, 0);
             }
         }
+
+        // This is called by the buttons
+        function showPage(pageId) {
+            setVisiblePage(pageId);
+            // We push the new pageId to the history
+            history.pushState({ page: pageId }, '', `#${pageId}`);
+        }
+
+        // When the history changes (back/forward button), this event is triggered
+        window.addEventListener('popstate', function(event) {
+            // If the state is null, it means we went back before the first pushState.
+            // In that case, we show the main page.
+            if (event.state === null) {
+                setVisiblePage('main-page');
+            } else {
+                setVisiblePage(event.state.page);
+            }
+        });
+        
+        // On initial load, we want to replace the current history entry
+        // with one for our main page. This prevents the back button
+        // from leaving the site on the first click.
+        history.replaceState({ page: 'main-page' }, '', '#main-page');
     </script>
 </body>
 </html>

@@ -50,7 +50,6 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- Main Schedule Page -->
     <div id="main-page" class="page active">
         <header class="bg-white shadow-md p-4 sticky top-0 z-10">
             <div class="container mx-auto max-w-4xl text-center">
@@ -62,11 +61,9 @@
         <main class="container mx-auto p-4 max-w-4xl">
             <div class="space-y-8">
 
-                <!-- Day 1: 9월 21일 (일) -->
                 <div>
                     <h2 class="text-xl font-bold mb-4 text-indigo-600">Day 1: 2025년 9월 21일 (일)</h2>
                     <div class="relative border-l-2 border-indigo-200 pl-8 space-y-8">
-                        <!-- 공항 픽업 -->
                         <div class="timeline-item">
                             <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-indigo-500 border-indigo-500">
                                 <i class="fas fa-plane-arrival"></i>
@@ -88,7 +85,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- 호텔 체크인 -->
                         <div class="timeline-item">
                             <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-indigo-500 border-indigo-500">
                                 <i class="fas fa-hotel"></i>
@@ -108,7 +104,6 @@
                     </div>
                 </div>
 
-                <!-- Day 2: 9월 22일 (월) -->
                 <div>
                     <h2 class="text-xl font-bold mb-4 text-teal-600">Day 2: 2025년 9월 22일 (월)</h2>
                     <div class="relative border-l-2 border-teal-200 pl-8">
@@ -135,7 +130,6 @@
                     </div>
                 </div>
 
-                <!-- Day 3: 9월 23일 (화) -->
                 <div>
                     <h2 class="text-xl font-bold mb-4 text-green-600">Day 3: 2025년 9월 23일 (화)</h2>
                     <div class="relative border-l-2 border-green-200 pl-8 space-y-8">
@@ -171,7 +165,16 @@
                                     <p><i class="fas fa-bed w-4 mr-1"></i><strong>Room:</strong> Premier Room (Double Bed), Breakfast included</p>
                                     <p><i class="fas fa-info-circle w-4 mr-1"></i><strong>Note:</strong> 18:00 Late Check-out included (Total 1.5 nights)</p>
                                     <p><i class="fas fa-phone w-4 mr-1"></i><strong>비상연락망:</strong> 080-709-0500</p>
-                                </div>
+                                    
+                                    <div class="mt-3 pt-3 border-t">
+                                        <p class="font-semibold text-base text-gray-800">호텔 추가사항 (9월 22일 업데이트):</p>
+                                        <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+                                            <li><strong>무료 뷔페 디너 (1회):</strong> 9월 23일</li>
+                                            <li><strong>무료 칵테일 (1회):</strong> 비치 바 (Beach Bar)</li>
+                                            <li><strong>체크인 시 안내:</strong> 인플루언서가 리셉션에서 상기 일정을 안내받을 수 있도록 예약에 메모 요청</li>
+                                        </ul>
+                                    </div>
+                                    </div>
                                 <button onclick="showPage('avani-guide')" class="mt-4 w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
                                     <i class="fas fa-book-open mr-2"></i>아바니 촬영 가이드 보기
                                 </button>
@@ -180,10 +183,26 @@
                     </div>
                 </div>
 
-                <!-- Day 4: 9월 24일 (수) -->
                 <div>
                     <h2 class="text-xl font-bold mb-4 text-red-600">Day 4: 2025년 9월 24일 (수)</h2>
-                    <div class="relative border-l-2 border-red-200 pl-8">
+                    <div class="relative border-l-2 border-red-200 pl-8 space-y-8">
+                        <div class="timeline-item">
+                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-red-500 border-red-500">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-3 rounded-md mb-3">
+                                    <p class="font-bold text-lg">10:00 - 호텔 인스펙션 및 촬영</p>
+                                </div>
+                                <div class="text-sm text-gray-600 mt-2 space-y-2">
+                                    <p><i class="fas fa-user-tie w-4 mr-1"></i><strong>담당자:</strong> Khun Opal</p>
+                                    <div class="request-box mt-2">
+                                        <p class="font-semibold">요청 문구:</p>
+                                        <p>Hello, I'm from Naeil Tour. We have a pre-arranged appointment for resort photography and inspection today. Could you please check our reservation?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="timeline-item">
                             <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-red-500 border-red-500">
                                 <i class="fas fa-plane-departure"></i>
@@ -203,7 +222,6 @@
                     </div>
                 </div>
                 
-                <!-- 여행 전 준비사항 Section -->
                 <div class="bg-white p-6 rounded-lg shadow preparation-section">
                     <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">여행 전 준비사항</h2>
                     <div class="space-y-6 text-sm text-gray-700">
@@ -247,7 +265,6 @@
         </main>
     </div>
 
-    <!-- Outrigger Guide Page -->
     <div id="outrigger-guide" class="page">
         <header class="shadow-md p-4 sticky-header">
             <div class="container mx-auto max-w-7xl flex justify-between items-center">
@@ -259,7 +276,6 @@
             </div>
         </header>
         <main class="container mx-auto p-4 sm:p-6 max-w-7xl space-y-8">
-            <!-- 객실 Section -->
             <section id="rooms" class="bg-white p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">객실 (Rooms)</h2>
                 <div class="space-y-8">
@@ -268,7 +284,6 @@
                     <div><h3 class="text-lg font-semibold mb-3 text-gray-700">풀빌라</h3><div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/BaoJbQl0Ijs" frameborder="0" allowfullscreen></iframe></div></div>
                 </div>
             </section>
-            <!-- 수영장 Section -->
             <section id="pool" class="bg-white p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">수영장 (Pool)</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -278,8 +293,7 @@
                 </div>
                 <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/X0P3xzWshdg" frameborder="0" allowfullscreen></iframe></div>
             </section>
-            <!-- 편의시설, 액티비티, 다이닝, 해변 Sections (Content from provided file) -->
-             <section id="amenities" class="bg-white p-6 rounded-lg shadow-lg">
+            <section id="amenities" class="bg-white p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">편의시설 (Amenities)</h2>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                     <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/5ce2cf99_z.jpg" alt="편의시설 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-square">
@@ -307,7 +321,6 @@
         </main>
     </div>
 
-    <!-- Avani Guide Page -->
     <div id="avani-guide" class="page">
         <header class="shadow-md p-4 sticky-header">
             <div class="container mx-auto max-w-7xl flex justify-between items-center">
@@ -319,41 +332,82 @@
             </div>
         </header>
         <main class="container mx-auto p-4 sm:p-6 max-w-7xl space-y-8">
-            <!-- 풍경, 해변, 워터파크, 다이닝 Sections (Content from provided file) -->
             <section id="scenery" class="bg-white p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">리조트 풍경 (Resort Scenery)</h2>
-                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/ZYvggJANiEA" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-container shadow-md">
+                    <iframe src="https://www.youtube.com/embed/ZYvggJANiEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </section>
+
             <section id="beach-avani" class="bg-white p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">리조트 해변 (Resort Beach)</h2>
-                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/RhlTNYkLgcc" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-container shadow-md">
+                    <iframe src="https://www.youtube.com/embed/RhlTNYkLgcc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </section>
+            
             <section id="waterpark" class="bg-white p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">워터파크 & 수영장 (Waterpark & Pool)</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
                     <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/48b67cc8_z.jpg" alt="워터파크 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
                     <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/99452ca9_z.jpg" alt="워터파크 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/8e735c13_z.jpg" alt="수영장 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/6d154840_z.jpg" alt="수영장 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
                 </div>
-                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/WeZFj7uMO9Q" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-container shadow-md">
+                    <iframe src="https://www.youtube.com/embed/WeZFj7uMO9Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </section>
-             <section id="dining-avani" class="bg-white p-6 rounded-lg shadow-lg">
+
+            <section id="dining-avani" class="bg-white p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">다이닝 (Dining)</h2>
-                 <p class="text-center text-gray-600 mb-4">Elements & The Beach House</p>
-                <div class="flex justify-center">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/233de7c0_z.jpg" alt="다이닝" class="rounded-lg shadow-md max-w-full md:max-w-2xl h-auto object-cover">
+                <p class="text-center text-gray-600 mb-4">Elements & The Beach House</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/233de7c0_z.jpg" alt="다이닝" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/b7added1_z.jpg" alt="다이닝 2" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/520ac9d9_z.jpg" alt="다이닝 3" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/19e55143_z.jpg" alt="다이닝 4" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/54c54e22_z.jpg" alt="다이닝 5" class="rounded-lg shadow-md w-full h-auto object-cover">
                 </div>
             </section>
-             <section id="fitness" class="bg-white p-6 rounded-lg shadow-lg">
+
+            <section id="fitness" class="bg-white p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">헬스장 (Fitness Center)</h2>
                 <div class="flex justify-center mb-6">
-                     <img src="https://thai.monkeytravel.com/attach/ckeditor/MONKEY/202407/o_1i2dv6ofoglo9ojtf61p2ma5pa.png?w=740&h=0" alt="헬스장" class="rounded-lg shadow-md max-w-full md:max-w-2xl h-auto object-cover">
+                    <img src="https://thai.monkeytravel.com/attach/ckeditor/MONKEY/202407/o_1i2dv6ofoglo9ojtf61p2ma5pa.png?w=740&h=0" alt="헬스장" class="rounded-lg shadow-md max-w-full md:max-w-2xl h-auto object-cover">
                 </div>
-                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/rYyICxEUWmM" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-container shadow-md">
+                    <iframe src="https://www.youtube.com/embed/rYyICxEUWmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section id="kidsclub" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">아바니 키즈클럽 (Avani Kids Club)</h2>
+                <div class="flex justify-center mb-6">
+                    <img src="https://thai.monkeytravel.com/attach/ckeditor/MONKEY/202407/o_1i2dv7k3rs311qvsm65l811lmga.png?w=740&h=0" alt="아바니 키즈클럽" class="rounded-lg shadow-md max-w-full md:max-w-2xl h-auto object-cover">
+                </div>
+                <div class="video-container shadow-md">
+                    <iframe src="https://www.youtube.com/embed/Lp9UhkDKERU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            
+            <section id="gameroom" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">게임장 (Game Room)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <img src="https://thai.monkeytravel.com/attach/ckeditor/MONKEY/202407/o_1i2dvbb7jlm610up1nim1f7p1s6ia.png?w=740&h=0" alt="게임장" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/ecda1ec3_z.jpg" alt="게임장 2" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/221421c9_z.jpg" alt="게임장 3" class="rounded-lg shadow-md w-full h-auto object-cover">
+                </div>
             </section>
         </main>
+        <footer class="bg-white mt-8 py-6 border-t">
+            <div class="container mx-auto text-center text-gray-500 text-sm">
+                <p>&copy; 2024 Your Travel Agency. All Rights Reserved.</p>
+            </div>
+        </footer>
     </div>
 
-    <!-- Tour Guide Page -->
+
     <div id="tour-guide" class="page">
         <header class="shadow-md p-4 sticky-header">
             <div class="container mx-auto max-w-7xl flex justify-between items-center">
@@ -365,7 +419,6 @@
             </div>
         </header>
         <main class="container mx-auto p-4 sm:p-6 max-w-7xl space-y-8">
-            <!-- 래프팅, 거북이, 코끼리, 준비물 Sections (Content from provided file) -->
             <section id="rafting" class="bg-white p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center tour-gradient">뱀부 래프팅 (Bamboo Rafting)</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -443,4 +496,3 @@
     </script>
 </body>
 </html>
-

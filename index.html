@@ -1,498 +1,582 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>카오락 촬영 일정 가이드</title>
+    <title>안지모지 x 내일투어 요금 달력</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .page {
+        /* Hide Scrollbar but keep functionality */
+        .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
-        .page.active {
-            display: block;
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
-        .timeline-item .icon {
-            background-color: white;
-            border: 2px solid;
-        }
-        /* Gradient text for guide titles */
-        .outrigger-gradient { background: linear-gradient(to right, #0077b6, #00b4d8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .avani-gradient { background: linear-gradient(to right, #d4af37, #f2c94c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .tour-gradient { background: linear-gradient(to right, #1e8449, #2ecc71); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 0.5rem; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        .sticky-header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.9); }
-        .request-box {
-            background-color: #f3f4f6;
-            border-left: 4px solid #4b5563;
-            padding: 12px;
-            font-style: italic;
-            color: #4b5563;
-        }
-        .preparation-section h3 {
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-            font-size: 1.25rem;
-        }
-        .preparation-section ul {
-            list-style-position: inside;
-            padding-left: 0.5rem;
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f8fafc;
+            /* slate-50 */
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
 
-    <div id="main-page" class="page active">
-        <header class="bg-white shadow-md p-4 sticky top-0 z-10">
-            <div class="container mx-auto max-w-4xl text-center">
-                <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">카오락 촬영 일정</h1>
-                <p class="text-sm sm:text-md text-gray-500 mt-1">2025년 9월 21일 ~ 2025년 9월 24일</p>
-            </div>
-        </header>
+<body>
 
-        <main class="container mx-auto p-4 max-w-4xl">
-            <div class="space-y-8">
-
-                <div>
-                    <h2 class="text-xl font-bold mb-4 text-indigo-600">Day 1: 2025년 9월 21일 (일)</h2>
-                    <div class="relative border-l-2 border-indigo-200 pl-8 space-y-8">
-                        <div class="timeline-item">
-                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-indigo-500 border-indigo-500">
-                                <i class="fas fa-plane-arrival"></i>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <p class="font-bold text-lg">20:15 - 푸켓 공항 도착 및 픽업</p>
-                                <div class="text-sm text-gray-600 mt-2 space-y-2">
-                                    <p><i class="fas fa-ticket-alt w-4 mr-1"></i><strong>Reservation No.:</strong> 146-108-025 (1)</p>
-                                    <p><i class="fas fa-user-friends w-4 mr-1"></i><strong>Booker:</strong> KIM CHANHO (2 Adults)</p>
-                                    <p><i class="fas fa-plane w-4 mr-1"></i><strong>Flight:</strong> OZ 725</p>
-                                    <p><i class="fas fa-car w-4 mr-1"></i><strong>Vehicle:</strong> Van / Driver K'Aek (+66 81-895-7211)</p>
-                                    <p><i class="fas fa-flag-checkered w-4 mr-1"></i><strong>Destination:</strong> Outrigger Khao Lak Beach Resort</p>
-                                    <div class="mt-2">
-                                        <p class="font-semibold"><i class="fas fa-map-marker-alt w-4 mr-1"></i>미팅 장소 안내</p>
-                                        <p class="pl-5">국제선 출국장에서 짐찾고 나오신 후 2번 게이트 밖 분리대에서 성함 확인. 찾기 힘드실 경우 비상 연락망으로 연락주세요.</p>
-                                        <img src="http://product.monkeytravel.com/1076866147/a510d9fa4a5939ebc8b559fab3863c2f.png_3.jpg?w=740&h=0" alt="미팅장소 이미지" class="mt-2 rounded-lg shadow-sm w-full">
-                                    </div>
-                                    <p><i class="fas fa-phone w-4 mr-1"></i><strong>비상연락망:</strong> 080-709-0500</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-indigo-500 border-indigo-500">
-                                <i class="fas fa-hotel"></i>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <p class="font-bold text-lg">아웃리거 카오락 비치 리조트 (Outrigger Khao Lak Beach Resort) 체크인</p>
-                                <div class="text-sm text-gray-600 mt-2 space-y-2">
-                                    <p><i class="fas fa-ticket-alt w-4 mr-1"></i><strong>Reservation No.:</strong> 550744424</p>
-                                    <p><i class="fas fa-user-friends w-4 mr-1"></i><strong>Guest:</strong> Ms. Yoon Ayoung, Mr. Kim/Chanho</p>
-                                    <p><i class="fas fa-bed w-4 mr-1"></i><strong>Room:</strong> Deluxe Garden Balcony (Sep 21 - Sep 23, 2 nights)</p>
-                                    <p><i class="fas fa-concierge-bell w-4 mr-1"></i><strong>Includes:</strong> 2 nights stay, breakfast, 1 complimentary dinner</p>
-                                    <p><i class="fas fa-info-circle w-4 mr-1"></i><strong>Note:</strong> Check-in 14:00, Check-out 12:00</p>
-                                    <p><i class="fas fa-phone w-4 mr-1"></i><strong>호텔 연락처:</strong> +66 (0)76 427100</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h2 class="text-xl font-bold mb-4 text-teal-600">Day 2: 2025년 9월 22일 (월)</h2>
-                    <div class="relative border-l-2 border-teal-200 pl-8">
-                        <div class="timeline-item">
-                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-teal-500 border-teal-500">
-                                <i class="fas fa-camera"></i>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <p class="font-bold text-lg">아웃리거 리조트 촬영 및 인스펙션</p>
-                                <div class="text-sm text-gray-600 mt-2 space-y-2">
-                                    <p><i class="far fa-clock w-4 mr-1"></i><strong>11:00</strong> - 리조트 인스펙션</p>
-                                    <p><i class="fas fa-camera-retro w-4 mr-1"></i><strong>이후</strong> - 자유 촬영</p>
-                                    <p><i class="fas fa-utensils w-4 mr-1"></i><strong>저녁</strong> - 엣지워터 레스토랑</p>
-                                    <div class="request-box mt-2">
-                                        <p class="font-semibold">요청 문구:</p>
-                                        <p>Hello, I'm from Naeil Tour. We have a pre-arranged appointment for resort photography and inspection today. Could you please check our reservation?</p>
-                                    </div>
-                                </div>
-                                <button onclick="showPage('outrigger-guide')" class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
-                                    <i class="fas fa-book-open mr-2"></i>아웃리거 촬영 가이드 보기
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h2 class="text-xl font-bold mb-4 text-green-600">Day 3: 2025년 9월 23일 (화)</h2>
-                    <div class="relative border-l-2 border-green-200 pl-8 space-y-8">
-                        <div class="timeline-item">
-                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-green-500 border-green-500">
-                                <i class="fas fa-tree"></i>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <p class="font-bold text-lg">09:00 - 카오락 내츄럴 투어</p>
-                                <div class="text-sm text-gray-600 mt-2 space-y-2">
-                                    <p><i class="fas fa-map-pin w-4 mr-1"></i><strong>픽업:</strong> 09:00, 아웃리거 카오락 리조트 로비</p>
-                                    <div class="pl-5">
-                                        <p>쓰나미 추모관 → 대나무 뗏목 및 점심 → 거북이 생태 체험관 → 왓 타 싸이 대웅전 + 코끼리 체험</p>
-                                    </div>
-                                    <p><i class="fas fa-flag-checkered w-4 mr-1"></i><strong>샌딩:</strong> 16:00, 아바니+ 카오락 리조트</p>
-                                    <p><i class="fas fa-phone w-4 mr-1"></i><strong>비상연락망:</strong> 081-693-3933 / 카톡: jec3933</p>
-                                </div>
-                                <button onclick="showPage('tour-guide')" class="mt-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
-                                    <i class="fas fa-book-open mr-2"></i>카오락 투어 가이드 보기
-                                </button>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-green-500 border-green-500">
-                                <i class="fas fa-hotel"></i>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <p class="font-bold text-lg">16:00 - 아바니+ 카오락 리조트 (Avani+ Khao Lak Resort) 체크인</p>
-                                <div class="text-sm text-gray-600 mt-2 space-y-2">
-                                    <p><i class="fas fa-ticket-alt w-4 mr-1"></i><strong>Reservation No.:</strong> 146-120-767 (1)</p>
-                                    <p><i class="fas fa-check-circle w-4 mr-1"></i><strong>Confirmation No.:</strong> 828658971</p>
-                                    <p><i class="fas fa-user-friends w-4 mr-1"></i><strong>Guest:</strong> KIM CHANHO (2 Adults)</p>
-                                    <p><i class="fas fa-bed w-4 mr-1"></i><strong>Room:</strong> Premier Room (Double Bed), Breakfast included</p>
-                                    <p><i class="fas fa-info-circle w-4 mr-1"></i><strong>Note:</strong> 18:00 Late Check-out included (Total 1.5 nights)</p>
-                                    <p><i class="fas fa-phone w-4 mr-1"></i><strong>비상연락망:</strong> 080-709-0500</p>
-                                    
-                                    <div class="mt-3 pt-3 border-t">
-                                        <p class="font-semibold text-base text-gray-800">호텔 추가사항 (9월 22일 업데이트):</p>
-                                        <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                                            <li><strong>무료 뷔페 디너 (1회):</strong> 9월 23일</li>
-                                            <li><strong>무료 칵테일 (1회):</strong> 비치 바 (Beach Bar)</li>
-                                            <li><strong>체크인 시 안내:</strong> 인플루언서가 리셉션에서 상기 일정을 안내받을 수 있도록 예약에 메모 요청</li>
-                                        </ul>
-                                    </div>
-                                    </div>
-                                <button onclick="showPage('avani-guide')" class="mt-4 w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg transition-colors">
-                                    <i class="fas fa-book-open mr-2"></i>아바니 촬영 가이드 보기
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h2 class="text-xl font-bold mb-4 text-red-600">Day 4: 2025년 9월 24일 (수)</h2>
-                    <div class="relative border-l-2 border-red-200 pl-8 space-y-8">
-                        <div class="timeline-item">
-                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-red-500 border-red-500">
-                                <i class="fas fa-camera"></i>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-3 rounded-md mb-3">
-                                    <p class="font-bold text-lg">10:00 - 호텔 인스펙션 및 촬영</p>
-                                </div>
-                                <div class="text-sm text-gray-600 mt-2 space-y-2">
-                                    <p><i class="fas fa-user-tie w-4 mr-1"></i><strong>담당자:</strong> Khun Opal</p>
-                                    <div class="request-box mt-2">
-                                        <p class="font-semibold">요청 문구:</p>
-                                        <p>Hello, I'm from Naeil Tour. We have a pre-arranged appointment for resort photography and inspection today. Could you please check our reservation?</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="icon absolute -left-4 top-1 h-8 w-8 rounded-full flex items-center justify-center text-red-500 border-red-500">
-                                <i class="fas fa-plane-departure"></i>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow">
-                                <p class="font-bold text-lg">17:30 - 공항 샌딩</p>
-                                <div class="text-sm text-gray-600 mt-2 space-y-2">
-                                    <p><i class="fas fa-ticket-alt w-4 mr-1"></i><strong>Reservation No.:</strong> 146-120-113 (1)</p>
-                                    <p><i class="fas fa-user-friends w-4 mr-1"></i><strong>Booker:</strong> KIM CHANHO (2 Adults)</p>
-                                    <p><i class="fas fa-car w-4 mr-1"></i><strong>Vehicle:</strong> Van</p>
-                                    <p><i class="fas fa-map-marker-alt w-4 mr-1"></i><strong>Meeting:</strong> Avani+ Resort Lobby</p>
-                                    <p><i class="fas fa-plane w-4 mr-1"></i><strong>Flight:</strong> OZ726</p>
-                                    <p><i class="fas fa-phone w-4 mr-1"></i><strong>비상연락망:</strong> 080-709-0500</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow preparation-section">
-                    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">여행 전 준비사항</h2>
-                    <div class="space-y-6 text-sm text-gray-700">
-                        <div>
-                            <h3 class="font-semibold text-gray-900">태국 디지털 입국 카드 (TDAC) 안내</h3>
-                            <ul class="list-disc space-y-1 mt-2">
-                                <li><strong>의무 시행:</strong> 2025년 5월 1일부터 모든 태국 입국자는 TDAC 작성이 의무입니다.</li>
-                                <li><strong>작성 사이트:</strong> <a href="https://tdac.immigration.go.th" target="_blank" class="text-blue-600 hover:underline">https://tdac.immigration.go.th</a></li>
-                                <li><strong>준비물:</strong> 여권 정보, 항공편, 태국 내 숙소 주소</li>
-                                <li><strong>절차:</strong> 사이트 접속 → 개인정보 및 여행정보 입력 → 건강상태 확인 → 제출 후 QR코드 발급</li>
-                                <li><strong>유의사항:</strong> 입국 72시간 전부터 작성 가능하며, 발급된 QR코드를 저장/출력하여 입국심사 시 여권과 함께 제시해야 합니다.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-900">여권 및 비자</h3>
-                             <ul class="list-disc space-y-1 mt-2">
-                                <li><strong>무비자:</strong> 90일 이내 체류 시 비자가 필요 없습니다.</li>
-                                <li><strong>여권 유효기간:</strong> 귀국일 기준 6개월(180일) 이상 남아있어야 합니다.</li>
-                                <li><strong>여권 훼손 주의:</strong> 낙서, 찢어짐 등 훼손된 여권은 사용이 불가할 수 있습니다.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-gray-900">수화물 및 반입 금지 물품</h3>
-                            <ul class="list-disc space-y-1 mt-2">
-                                <li><strong>전자담배:</strong> 태국 내 소지 및 사용이 불법이며, 적발 시 처벌받을 수 있습니다.</li>
-                                <li><strong>담배/주류:</strong> 1인당 담배 1보루, 주류 1리터까지만 반입 가능합니다.</li>
-                            </ul>
-                        </div>
-                         <div>
-                            <h3 class="font-semibold text-gray-900">현지 정보 및 기타</h3>
-                            <ul class="list-disc space-y-1 mt-2">
-                                <li><strong>환전:</strong> 소액은 한국에서 바트(THB)로 바로 환전, 금액이 크면 달러($100 지폐)로 환전 후 현지에서 이중 환전하는 것이 유리합니다.</li>
-                                <li><strong>데이터:</strong> 공항에서 유심(USIM)을 구매하거나 한국에서 미리 eSIM을 준비하는 것을 추천합니다.</li>
-                                <li><strong>대마/끄라톰 주의:</strong> 태국 내 일부 허용되나, 한국인이 섭취/사용 시 국내법에 따라 처벌받을 수 있으니 각별한 주의가 필요합니다.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </main>
-    </div>
-
-    <div id="outrigger-guide" class="page">
-        <header class="shadow-md p-4 sticky-header">
-            <div class="container mx-auto max-w-7xl flex justify-between items-center">
-                <button onclick="showPage('main-page')" class="text-blue-600 hover:text-blue-800"><i class="fas fa-arrow-left fa-lg"></i></button>
-                <div class="text-center">
-                    <h1 class="text-xl sm:text-2xl font-bold text-gray-800">Outrigger Khao Lak 촬영 가이드</h1>
-                </div>
-                <div class="w-8"></div>
-            </div>
-        </header>
-        <main class="container mx-auto p-4 sm:p-6 max-w-7xl space-y-8">
-            <section id="rooms" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">객실 (Rooms)</h2>
-                <div class="space-y-8">
-                    <div><h3 class="text-lg font-semibold mb-3 text-gray-700">디럭스가든 발코니</h3><div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/GA9-IXpGad4" frameborder="0" allowfullscreen></iframe></div></div>
-                    <div><h3 class="text-lg font-semibold mb-3 text-gray-700">가든 빌라</h3><div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/ztO5R69Aufg" frameborder="0" allowfullscreen></iframe></div></div>
-                    <div><h3 class="text-lg font-semibold mb-3 text-gray-700">풀빌라</h3><div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/BaoJbQl0Ijs" frameborder="0" allowfullscreen></iframe></div></div>
-                </div>
-            </section>
-            <section id="pool" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">수영장 (Pool)</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/49d92062_z.jpg" alt="수영장 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/5bf3f20f_z.jpg" alt="수영장 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/71c9fd48_z.jpg" alt="수영장 3" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                </div>
-                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/X0P3xzWshdg" frameborder="0" allowfullscreen></iframe></div>
-            </section>
-            <section id="amenities" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">편의시설 (Amenities)</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/5ce2cf99_z.jpg" alt="편의시설 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-square">
-                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/4d8f493b_z.jpg" alt="편의시설 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-square">
-                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/b8cf037a_z.jpg" alt="편의시설 3" class="rounded-lg shadow-md w-full h-auto object-cover aspect-square">
-                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/7fdbcca8_z.jpg" alt="편의시설 4" class="rounded-lg shadow-md w-full h-auto object-cover aspect-square">
-                </div>
-            </section>
-            <section id="dining" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">다이닝/바 (Dining/Bar)</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/ca7a7a82_z.jpg" alt="다이닝 1" class="rounded-lg shadow-md w-full h-auto object-cover">
-                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/b0ec3d36_z.jpg" alt="다이닝 2" class="rounded-lg shadow-md w-full h-auto object-cover">
-                </div>
-                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/gS6CMvmLFPM" frameborder="0" allowfullscreen></iframe></div>
-            </section>
-            <section id="beach" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center outrigger-gradient">해변 (Beach)</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/d633c003_z.jpg" alt="해변 1" class="rounded-lg shadow-md w-full h-auto object-cover">
-                    <img src="https://i.travelapi.com/lodging/2000000/1870000/1868900/1868876/860699b2_z.jpg" alt="해변 2" class="rounded-lg shadow-md w-full h-auto object-cover">
-                </div>
-                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/ua63ctiuOS4" frameborder="0" allowfullscreen></iframe></div>
-            </section>
-        </main>
-    </div>
-
-    <div id="avani-guide" class="page">
-        <header class="shadow-md p-4 sticky-header">
-            <div class="container mx-auto max-w-7xl flex justify-between items-center">
-                <button onclick="showPage('main-page')" class="text-yellow-600 hover:text-yellow-800"><i class="fas fa-arrow-left fa-lg"></i></button>
-                <div class="text-center">
-                    <h1 class="text-xl sm:text-2xl font-bold text-gray-800">Avani+ Khao Lak 촬영 가이드</h1>
-                </div>
-                <div class="w-8"></div>
-            </div>
-        </header>
-        <main class="container mx-auto p-4 sm:p-6 max-w-7xl space-y-8">
-            <section id="scenery" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">리조트 풍경 (Resort Scenery)</h2>
-                <div class="video-container shadow-md">
-                    <iframe src="https://www.youtube.com/embed/ZYvggJANiEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
-
-            <section id="beach-avani" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">리조트 해변 (Resort Beach)</h2>
-                <div class="video-container shadow-md">
-                    <iframe src="https://www.youtube.com/embed/RhlTNYkLgcc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
-            
-            <section id="waterpark" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">워터파크 & 수영장 (Waterpark & Pool)</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/48b67cc8_z.jpg" alt="워터파크 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/99452ca9_z.jpg" alt="워터파크 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/8e735c13_z.jpg" alt="수영장 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/6d154840_z.jpg" alt="수영장 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                </div>
-                <div class="video-container shadow-md">
-                    <iframe src="https://www.youtube.com/embed/WeZFj7uMO9Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
-
-            <section id="dining-avani" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">다이닝 (Dining)</h2>
-                <p class="text-center text-gray-600 mb-4">Elements & The Beach House</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/233de7c0_z.jpg" alt="다이닝" class="rounded-lg shadow-md w-full h-auto object-cover">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/b7added1_z.jpg" alt="다이닝 2" class="rounded-lg shadow-md w-full h-auto object-cover">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/520ac9d9_z.jpg" alt="다이닝 3" class="rounded-lg shadow-md w-full h-auto object-cover">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/19e55143_z.jpg" alt="다이닝 4" class="rounded-lg shadow-md w-full h-auto object-cover">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/54c54e22_z.jpg" alt="다이닝 5" class="rounded-lg shadow-md w-full h-auto object-cover">
-                </div>
-            </section>
-
-            <section id="fitness" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">헬스장 (Fitness Center)</h2>
-                <div class="flex justify-center mb-6">
-                    <img src="https://thai.monkeytravel.com/attach/ckeditor/MONKEY/202407/o_1i2dv6ofoglo9ojtf61p2ma5pa.png?w=740&h=0" alt="헬스장" class="rounded-lg shadow-md max-w-full md:max-w-2xl h-auto object-cover">
-                </div>
-                <div class="video-container shadow-md">
-                    <iframe src="https://www.youtube.com/embed/rYyICxEUWmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
-
-            <section id="kidsclub" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">아바니 키즈클럽 (Avani Kids Club)</h2>
-                <div class="flex justify-center mb-6">
-                    <img src="https://thai.monkeytravel.com/attach/ckeditor/MONKEY/202407/o_1i2dv7k3rs311qvsm65l811lmga.png?w=740&h=0" alt="아바니 키즈클럽" class="rounded-lg shadow-md max-w-full md:max-w-2xl h-auto object-cover">
-                </div>
-                <div class="video-container shadow-md">
-                    <iframe src="https://www.youtube.com/embed/Lp9UhkDKERU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
-            
-            <section id="gameroom" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center avani-gradient">게임장 (Game Room)</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <img src="https://thai.monkeytravel.com/attach/ckeditor/MONKEY/202407/o_1i2dvbb7jlm610up1nim1f7p1s6ia.png?w=740&h=0" alt="게임장" class="rounded-lg shadow-md w-full h-auto object-cover">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/ecda1ec3_z.jpg" alt="게임장 2" class="rounded-lg shadow-md w-full h-auto object-cover">
-                    <img src="https://i.travelapi.com/lodging/74000000/73070000/73068400/73068311/221421c9_z.jpg" alt="게임장 3" class="rounded-lg shadow-md w-full h-auto object-cover">
-                </div>
-            </section>
-        </main>
-        <footer class="bg-white mt-8 py-6 border-t">
-            <div class="container mx-auto text-center text-gray-500 text-sm">
-                <p>&copy; 2024 Your Travel Agency. All Rights Reserved.</p>
-            </div>
-        </footer>
-    </div>
-
-
-    <div id="tour-guide" class="page">
-        <header class="shadow-md p-4 sticky-header">
-            <div class="container mx-auto max-w-7xl flex justify-between items-center">
-                <button onclick="showPage('main-page')" class="text-green-600 hover:text-green-800"><i class="fas fa-arrow-left fa-lg"></i></button>
-                <div class="text-center">
-                    <h1 class="text-xl sm:text-2xl font-bold text-gray-800">카오락 내츄럴 투어 가이드</h1>
-                </div>
-                <div class="w-8"></div>
-            </div>
-        </header>
-        <main class="container mx-auto p-4 sm:p-6 max-w-7xl space-y-8">
-            <section id="rafting" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center tour-gradient">뱀부 래프팅 (Bamboo Rafting)</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                    <img src="https://www.tourbuy4u.com/uploads/product/prd_new_238_6401914880be0_1677824328.jpg" alt="뱀부 래프팅 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                    <img src="https://thai.monkeytravel.com/attach/product/MONKEY/extraKR/descImage/202405/o_1hursevne4261vqe4lnvtjd2a14.jpeg" alt="뱀부 래프팅 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                </div>
-                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/OnU6ncRJxEM" frameborder="0" allowfullscreen></iframe></div>
-            </section>
-            <section id="turtle" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center tour-gradient">거북이 생태 체험장 (Turtle Sanctuary)</h2>
-                <div class="flex justify-center mb-6">
-                    <img src="https://d2mgzmtdeipcjp.cloudfront.net/files/good/2024/03/12/17102139630697.jpg" alt="거북이 체험장" class="rounded-lg shadow-md max-w-full md:max-w-2xl h-auto object-cover">
-                </div>
-                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/eM6l27fXn94" frameborder="0" allowfullscreen></iframe></div>
-            </section>
-            <section id="elephant" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center tour-gradient">코끼리 생츄어리 (Elephant Sanctuary)</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                    <img src="https://thumb.tidesquare.com/tour/public/product/PRV3000000013/PRD3001128830/origin/20230907100902302_wBheu.jpg?type=wide" alt="코끼리 1" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                    <img src="https://thumb.tidesquare.com/tour/public/product/PRV3000000013/PRD3001128830/origin/20230907100901486_8uQI3.jpg?type=wide" alt="코끼리 2" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                    <img src="https://static.hanatour.com/product-basic/2022/12/12/04509lk8i0/large.jpg" alt="코끼리 3" class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
-                </div>
-                <div class="video-container shadow-md"><iframe src="https://www.youtube.com/embed/q2XkYSrMkog" frameborder="0" allowfullscreen></iframe></div>
-            </section>
-            <section id="preparation" class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center tour-gradient">투어 준비물 (What to Bring)</h2>
-                <div class="max-w-2xl mx-auto">
-                    <ul class="list-disc list-inside space-y-3 text-gray-700 bg-gray-50 p-6 rounded-md">
-                        <li>래쉬가드 및 수영복, 여벌 옷</li>
-                        <li>비치타올 (호텔에서 대여)</li>
-                        <li>선크림, 모자, 선글라스</li>
-                        <li>방수팩 (스마트폰 등 전자기기 보호)</li>
-                        <li>약간의 비상금 (팁, 간식 등)</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-    </div>
+    <!-- App Container -->
+    <div id="app" class="max-w-md mx-auto bg-slate-50 min-h-screen pb-10 relative shadow-lg"></div>
 
     <script>
-        // The function that actually changes the visible page
-        function setVisiblePage(pageId) {
-            document.querySelectorAll('.page').forEach(page => {
-                page.classList.remove('active');
+        // --- 아이콘 SVG (Lucide React 대체) ---
+        const ICONS = {
+            info: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#0077B6] mt-0.5 shrink-0"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>`,
+            chevronLeft: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-600"><path d="m15 18-6-6 6-6"/></svg>`,
+            chevronRight: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-600"><path d="m9 18 6-6-6-6"/></svg>`,
+            x: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`
+        };
+
+        // --- 데이터 영역 (Raw Data) ---
+        // ----------------------------------------------------------------------
+        // [Product B Data]
+        // ----------------------------------------------------------------------
+        const RAW_B_2A = {
+            "2026-03-01": 825550, "2026-03-02": 825550, "2026-03-03": 825550, "2026-03-04": 854050, "2026-03-05": 854050, "2026-03-06": 854050, "2026-03-07": 825550, "2026-03-08": 825550, "2026-03-09": 825550, "2026-03-10": 825550, "2026-03-11": 854050, "2026-03-12": 854050, "2026-03-13": 854050, "2026-03-14": 825550, "2026-03-15": 825550, "2026-03-16": 825550, "2026-03-17": 825550, "2026-03-18": 854050, "2026-03-19": 854050, "2026-03-20": 854050, "2026-03-21": 825550, "2026-03-22": 825550, "2026-03-23": 825550, "2026-03-24": 825550, "2026-03-25": 854050, "2026-03-26": 854050, "2026-03-27": 854050, "2026-03-28": 854050, "2026-03-29": 882550, "2026-03-30": 844550, "2026-03-31": 835050,
+            "2026-04-01": 1006050, "2026-04-02": 816050, "2026-04-03": 759050, "2026-04-04": 759050, "2026-04-05": 816050, "2026-04-06": 816050, "2026-04-07": 759050, "2026-04-08": 816050, "2026-04-09": 759050, "2026-04-10": 759050, "2026-04-11": 759050, "2026-04-12": 816050, "2026-04-13": 759050, "2026-04-14": 759050, "2026-04-15": 816050, "2026-04-16": 759050, "2026-04-17": 759050, "2026-04-18": 759050, "2026-04-19": 759050, "2026-04-20": 759050, "2026-04-21": 730550, "2026-04-22": 730550, "2026-04-23": 759050, "2026-04-24": 759050, "2026-04-25": 759050, "2026-04-26": 1148550, "2026-04-27": 816050, "2026-04-28": 873050, "2026-04-29": 1224550, "2026-04-30": 1348050,
+            "2026-05-01": 1414550, "2026-05-02": 1367050, "2026-05-03": 1196050, "2026-05-04": 977550, "2026-05-05": 1006050, "2026-05-06": 882550, "2026-05-07": 816050, "2026-05-08": 816050, "2026-05-09": 778050, "2026-05-10": 778050, "2026-05-11": 740050, "2026-05-12": 816050, "2026-05-13": 778050, "2026-05-14": 778050, "2026-05-15": 740050, "2026-05-16": 740050, "2026-05-17": 778050, "2026-05-18": 778050, "2026-05-19": 778050, "2026-05-20": 816050, "2026-05-21": 882550, "2026-05-22": 1148550, "2026-05-23": 882550, "2026-05-24": 778050, "2026-05-25": 778050, "2026-05-26": 778050, "2026-05-27": 778050, "2026-05-28": 740050, "2026-05-29": 778050, "2026-05-30": 816050, "2026-05-31": 816050,
+            "2026-06-01": 740050, "2026-06-02": 816050, "2026-06-03": 1177050, "2026-06-04": 996550, "2026-06-05": 740050, "2026-06-06": 740050, "2026-06-07": 882550, "2026-06-08": 740050, "2026-06-09": 740050, "2026-06-10": 816050, "2026-06-11": 740050, "2026-06-12": 740050, "2026-06-13": 740050, "2026-06-14": 778050, "2026-06-15": 816050, "2026-06-16": 740050, "2026-06-17": 778050, "2026-06-18": 740050, "2026-06-19": 740050, "2026-06-20": 740050, "2026-06-21": 740050, "2026-06-22": 740050, "2026-06-23": 740050, "2026-06-24": 740050, "2026-06-25": 740050, "2026-06-26": 740050, "2026-06-27": 778050, "2026-06-28": 778050, "2026-06-29": 749550, "2026-06-30": 759050,
+            "2026-07-01": 844550, "2026-07-02": 797050, "2026-07-03": 797050, "2026-07-04": 797050, "2026-07-05": 797050, "2026-07-06": 882550, "2026-07-07": 797050, "2026-07-08": 797050, "2026-07-09": 797050, "2026-07-10": 844550, "2026-07-11": 844550, "2026-07-12": 844550, "2026-07-13": 797050, "2026-07-14": 797050, "2026-07-15": 844550, "2026-07-16": 920550, "2026-07-17": 920550, "2026-07-18": 920550, "2026-07-19": 920550, "2026-07-20": 920550, "2026-07-21": 920550, "2026-07-22": 920550, "2026-07-23": 1063050, "2026-07-24": 939550, "2026-07-25": 1063050, "2026-07-26": 1091550, "2026-07-27": 968050, "2026-07-28": 968050, "2026-07-29": 1196050, "2026-07-30": 968050, "2026-07-31": 968050,
+            "2026-08-01": 1148550, "2026-08-02": 968050, "2026-08-03": 939550, "2026-08-04": 939550, "2026-08-05": 939550, "2026-08-06": 920550, "2026-08-07": 939550, "2026-08-08": 939550, "2026-08-09": 939550, "2026-08-10": 920550, "2026-08-11": 939550, "2026-08-12": 939550, "2026-08-13": 939550, "2026-08-14": 1215050, "2026-08-15": 987050, "2026-08-16": 882550, "2026-08-17": 844550, "2026-08-18": 844550, "2026-08-19": 844550, "2026-08-20": 797050, "2026-08-21": 797050, "2026-08-22": 797050, "2026-08-23": 768550, "2026-08-24": 806550, "2026-08-25": 806550, "2026-08-26": 768550, "2026-08-27": 768550, "2026-08-28": 768550, "2026-08-29": 768550, "2026-08-30": 759050, "2026-08-31": 749550,
+            "2026-09-01": 740050, "2026-09-02": 740050, "2026-09-03": 740050, "2026-09-04": 740050, "2026-09-05": 740050, "2026-09-06": 740050, "2026-09-07": 740050, "2026-09-08": 740050, "2026-09-09": 740050, "2026-09-10": 740050, "2026-09-11": 740050, "2026-09-12": 740050, "2026-09-13": 740050, "2026-09-14": 740050, "2026-09-15": 740050, "2026-09-16": 740050, "2026-09-17": 740050, "2026-09-18": 768550, "2026-09-19": 806550, "2026-09-20": 806550, "2026-09-21": 806550, "2026-09-22": 1956050, "2026-09-23": 2079550, "2026-09-24": 1851550, "2026-09-25": 1177050, "2026-09-26": 1101050, "2026-09-27": 778050, "2026-09-28": 778050, "2026-09-29": 882550, "2026-09-30": 882550,
+            "2026-10-01": 1595050, "2026-10-02": 2079550, "2026-10-03": 1405050, "2026-10-04": 939550, "2026-10-05": 844550, "2026-10-06": 939550, "2026-10-07": 1728050, "2026-10-08": 1709050, "2026-10-09": 1652050, "2026-10-10": 778050, "2026-10-11": 778050, "2026-10-12": 816050, "2026-10-13": 816050, "2026-10-14": 778050, "2026-10-15": 778050, "2026-10-16": 740050, "2026-10-17": 778050, "2026-10-18": 778050, "2026-10-19": 816050, "2026-10-20": 816050, "2026-10-21": 778050, "2026-10-22": 778050, "2026-10-23": 854050, "2026-10-24": 854050, "2026-10-25": 854050, "2026-10-26": 854050, "2026-10-27": 854050, "2026-10-28": 854050
+        };
+
+        const RAW_B_2A1C_C = {
+            "2026-03-01": 493050, "2026-03-02": 493050, "2026-03-03": 493050, "2026-03-04": 512050, "2026-03-05": 512050, "2026-03-06": 512050, "2026-03-07": 493050, "2026-03-08": 493050, "2026-03-09": 493050, "2026-03-10": 493050, "2026-03-11": 512050, "2026-03-12": 512050, "2026-03-13": 512050, "2026-03-14": 493050, "2026-03-15": 493050, "2026-03-16": 493050, "2026-03-17": 493050, "2026-03-18": 512050, "2026-03-19": 512050, "2026-03-20": 512050, "2026-03-21": 493050, "2026-03-22": 493050, "2026-03-23": 493050, "2026-03-24": 493050, "2026-03-25": 512050, "2026-03-26": 455050, "2026-03-27": 455050, "2026-03-28": 455050, "2026-03-29": 474050, "2026-03-30": 474050, "2026-03-31": 493050,
+            "2026-04-01": 645050, "2026-04-02": 502550, "2026-04-03": 464550, "2026-04-04": 464550, "2026-04-05": 502550, "2026-04-06": 502550, "2026-04-07": 464550, "2026-04-08": 502550, "2026-04-09": 464550, "2026-04-10": 464550, "2026-04-11": 464550, "2026-04-12": 502550, "2026-04-13": 464550, "2026-04-14": 464550, "2026-04-15": 502550, "2026-04-16": 464550, "2026-04-17": 464550, "2026-04-18": 464550, "2026-04-19": 464550, "2026-04-20": 464550, "2026-04-21": 436050, "2026-04-22": 436050, "2026-04-23": 464550, "2026-04-24": 464550, "2026-04-25": 464550, "2026-04-26": 759050, "2026-04-27": 502550, "2026-04-28": 550050, "2026-04-29": 816050, "2026-04-30": 901550,
+            "2026-05-01": 958550, "2026-05-02": 920550, "2026-05-03": 787550, "2026-05-04": 626050, "2026-05-05": 645050, "2026-05-06": 550050, "2026-05-07": 502550, "2026-05-08": 502550, "2026-05-09": 474050, "2026-05-10": 474050, "2026-05-11": 445550, "2026-05-12": 502550, "2026-05-13": 474050, "2026-05-14": 474050, "2026-05-15": 445550, "2026-05-16": 445550, "2026-05-17": 474050, "2026-05-18": 474050, "2026-05-19": 474050, "2026-05-20": 502550, "2026-05-21": 550050, "2026-05-22": 759050, "2026-05-23": 550050, "2026-05-24": 474050, "2026-05-25": 474050, "2026-05-26": 474050, "2026-05-27": 474050, "2026-05-28": 445550, "2026-05-29": 474050, "2026-05-30": 502550, "2026-05-31": 502550,
+            "2026-06-01": 445550, "2026-06-02": 502550, "2026-06-03": 778050, "2026-06-04": 645050, "2026-06-05": 445550, "2026-06-06": 445550, "2026-06-07": 550050, "2026-06-08": 445550, "2026-06-09": 445550, "2026-06-10": 502550, "2026-06-11": 445550, "2026-06-12": 445550, "2026-06-13": 445550, "2026-06-14": 474050, "2026-06-15": 502550, "2026-06-16": 445550, "2026-06-17": 474050, "2026-06-18": 445550, "2026-06-19": 445550, "2026-06-20": 445550, "2026-06-21": 445550, "2026-06-22": 445550, "2026-06-23": 445550, "2026-06-24": 445550, "2026-06-25": 445550, "2026-06-26": 445550, "2026-06-27": 474050, "2026-06-28": 474050, "2026-06-29": 445550, "2026-06-30": 445550,
+            "2026-07-01": 502550, "2026-07-02": 464550, "2026-07-03": 464550, "2026-07-04": 464550, "2026-07-05": 464550, "2026-07-06": 531050, "2026-07-07": 464550, "2026-07-08": 464550, "2026-07-09": 464550, "2026-07-10": 502550, "2026-07-11": 502550, "2026-07-12": 502550, "2026-07-13": 464550, "2026-07-14": 464550, "2026-07-15": 502550, "2026-07-16": 550050, "2026-07-17": 550050, "2026-07-18": 550050, "2026-07-19": 550050, "2026-07-20": 550050, "2026-07-21": 550050, "2026-07-22": 550050, "2026-07-23": 664050, "2026-07-24": 578550, "2026-07-25": 673550, "2026-07-26": 692550, "2026-07-27": 597550, "2026-07-28": 597550, "2026-07-29": 759050, "2026-07-30": 597550, "2026-07-31": 597550,
+            "2026-08-01": 730550, "2026-08-02": 597550, "2026-08-03": 578550, "2026-08-04": 578550, "2026-08-05": 578550, "2026-08-06": 550050, "2026-08-07": 578550, "2026-08-08": 578550, "2026-08-09": 578550, "2026-08-10": 550050, "2026-08-11": 578550, "2026-08-12": 578550, "2026-08-13": 578550, "2026-08-14": 787550, "2026-08-15": 607050, "2026-08-16": 531050, "2026-08-17": 502550, "2026-08-18": 502550, "2026-08-19": 502550, "2026-08-20": 464550, "2026-08-21": 464550, "2026-08-22": 464550, "2026-08-23": 445550, "2026-08-24": 474050, "2026-08-25": 474050, "2026-08-26": 445550, "2026-08-27": 445550, "2026-08-28": 445550, "2026-08-29": 445550, "2026-08-30": 445550, "2026-08-31": 445550,
+            "2026-09-01": 445550, "2026-09-02": 445550, "2026-09-03": 445550, "2026-09-04": 445550, "2026-09-05": 445550, "2026-09-06": 445550, "2026-09-07": 445550, "2026-09-08": 445550, "2026-09-09": 445550, "2026-09-10": 445550, "2026-09-11": 445550, "2026-09-12": 445550, "2026-09-13": 445550, "2026-09-14": 445550, "2026-09-15": 445550, "2026-09-16": 445550, "2026-09-17": 445550, "2026-09-18": 464550, "2026-09-19": 502550, "2026-09-20": 502550, "2026-09-21": 502550, "2026-09-22": 1367050, "2026-09-23": 1452550, "2026-09-24": 1291050, "2026-09-25": 778050, "2026-09-26": 721050, "2026-09-27": 474050, "2026-09-28": 474050, "2026-09-29": 550050, "2026-09-30": 550050,
+            "2026-10-01": 1101050, "2026-10-02": 1452550, "2026-10-03": 949050, "2026-10-04": 597550, "2026-10-05": 531050, "2026-10-06": 597550, "2026-10-07": 1196050, "2026-10-08": 1177050, "2026-10-09": 1139050, "2026-10-10": 474050, "2026-10-11": 474050, "2026-10-12": 502550, "2026-10-13": 502550, "2026-10-14": 474050, "2026-10-15": 474050, "2026-10-16": 445550, "2026-10-17": 474050, "2026-10-18": 474050, "2026-10-19": 502550, "2026-10-20": 502550, "2026-10-21": 474050, "2026-10-22": 474050, "2026-10-23": 531050, "2026-10-24": 531050, "2026-10-25": 531050, "2026-10-26": 531050, "2026-10-27": 531050, "2026-10-28": 531050
+        };
+
+        const RAW_B_3A = {
+            "2026-03-01": 778050, "2026-03-02": 778050, "2026-03-03": 778050, "2026-03-04": 797050, "2026-03-05": 797050, "2026-03-06": 797050, "2026-03-07": 778050, "2026-03-08": 778050, "2026-03-09": 778050, "2026-03-10": 778050, "2026-03-11": 797050, "2026-03-12": 797050, "2026-03-13": 797050, "2026-03-14": 778050, "2026-03-15": 778050, "2026-03-16": 778050, "2026-03-17": 778050, "2026-03-18": 797050, "2026-03-19": 797050, "2026-03-20": 797050, "2026-03-21": 778050, "2026-03-22": 778050, "2026-03-23": 778050, "2026-03-24": 778050, "2026-03-25": 797050, "2026-03-26": 806550, "2026-03-27": 806550, "2026-03-28": 806550, "2026-03-29": 825550, "2026-03-30": 806550, "2026-03-31": 806550,
+            "2026-04-01": 996550, "2026-04-02": 797050, "2026-04-03": 740050, "2026-04-04": 740050, "2026-04-05": 797050, "2026-04-06": 797050, "2026-04-07": 740050, "2026-04-08": 797050, "2026-04-09": 740050, "2026-04-10": 740050, "2026-04-11": 740050, "2026-04-12": 797050, "2026-04-13": 740050, "2026-04-14": 740050, "2026-04-15": 797050, "2026-04-16": 740050, "2026-04-17": 740050, "2026-04-18": 740050, "2026-04-19": 740050, "2026-04-20": 740050, "2026-04-21": 711550, "2026-04-22": 711550, "2026-04-23": 740050, "2026-04-24": 740050, "2026-04-25": 740050, "2026-04-26": 1139050, "2026-04-27": 797050, "2026-04-28": 863550, "2026-04-29": 1215050, "2026-04-30": 1338550,
+            "2026-05-01": 1414550, "2026-05-02": 1357550, "2026-05-03": 1186550, "2026-05-04": 968050, "2026-05-05": 996550, "2026-05-06": 863550, "2026-05-07": 797050, "2026-05-08": 797050, "2026-05-09": 759050, "2026-05-10": 759050, "2026-05-11": 721050, "2026-05-12": 797050, "2026-05-13": 759050, "2026-05-14": 759050, "2026-05-15": 721050, "2026-05-16": 721050, "2026-05-17": 759050, "2026-05-18": 759050, "2026-05-19": 759050, "2026-05-20": 797050, "2026-05-21": 863550, "2026-05-22": 1139050, "2026-05-23": 863550, "2026-05-24": 759050, "2026-05-25": 759050, "2026-05-26": 759050, "2026-05-27": 759050, "2026-05-28": 721050, "2026-05-29": 759050, "2026-05-30": 797050, "2026-05-31": 797050,
+            "2026-06-01": 721050, "2026-06-02": 797050, "2026-06-03": 1158050, "2026-06-04": 987050, "2026-06-05": 721050, "2026-06-06": 721050, "2026-06-07": 863550, "2026-06-08": 721050, "2026-06-09": 721050, "2026-06-10": 797050, "2026-06-11": 721050, "2026-06-12": 721050, "2026-06-13": 721050, "2026-06-14": 759050, "2026-06-15": 797050, "2026-06-16": 721050, "2026-06-17": 759050, "2026-06-18": 721050, "2026-06-19": 721050, "2026-06-20": 721050, "2026-06-21": 721050, "2026-06-22": 721050, "2026-06-23": 721050, "2026-06-24": 721050, "2026-06-25": 721050, "2026-06-26": 721050, "2026-06-27": 759050, "2026-06-28": 759050, "2026-06-29": 730550, "2026-06-30": 740050,
+            "2026-07-01": 816050, "2026-07-02": 768550, "2026-07-03": 768550, "2026-07-04": 768550, "2026-07-05": 768550, "2026-07-06": 863550, "2026-07-07": 768550, "2026-07-08": 768550, "2026-07-09": 768550, "2026-07-10": 816050, "2026-07-11": 816050, "2026-07-12": 816050, "2026-07-13": 768550, "2026-07-14": 768550, "2026-07-15": 816050, "2026-07-16": 892050, "2026-07-17": 892050, "2026-07-18": 892050, "2026-07-19": 892050, "2026-07-20": 892050, "2026-07-21": 892050, "2026-07-22": 892050, "2026-07-23": 1034550, "2026-07-24": 920550, "2026-07-25": 1044050, "2026-07-26": 1072550, "2026-07-27": 949050, "2026-07-28": 949050, "2026-07-29": 1167550, "2026-07-30": 949050, "2026-07-31": 949050,
+            "2026-08-01": 1129550, "2026-08-02": 949050, "2026-08-03": 920550, "2026-08-04": 920550, "2026-08-05": 920550, "2026-08-06": 892050, "2026-08-07": 920550, "2026-08-08": 920550, "2026-08-09": 920550, "2026-08-10": 892050, "2026-08-11": 920550, "2026-08-12": 920550, "2026-08-13": 920550, "2026-08-14": 1196050, "2026-08-15": 958550, "2026-08-16": 863550, "2026-08-17": 816050, "2026-08-18": 816050, "2026-08-19": 816050, "2026-08-20": 768550, "2026-08-21": 768550, "2026-08-22": 768550, "2026-08-23": 740050, "2026-08-24": 778050, "2026-08-25": 778050, "2026-08-26": 740050, "2026-08-27": 740050, "2026-08-28": 740050, "2026-08-29": 740050, "2026-08-30": 740050, "2026-08-31": 730550,
+            "2026-09-01": 721050, "2026-09-02": 721050, "2026-09-03": 721050, "2026-09-04": 721050, "2026-09-05": 721050, "2026-09-06": 721050, "2026-09-07": 721050, "2026-09-08": 721050, "2026-09-09": 721050, "2026-09-10": 721050, "2026-09-11": 721050, "2026-09-12": 721050, "2026-09-13": 721050, "2026-09-14": 721050, "2026-09-15": 721050, "2026-09-16": 721050, "2026-09-17": 721050, "2026-09-18": 749550, "2026-09-19": 797050, "2026-09-20": 797050, "2026-09-21": 797050, "2026-09-22": 1956050, "2026-09-23": 2079550, "2026-09-24": 1851550, "2026-09-25": 1167550, "2026-09-26": 1091550, "2026-09-27": 759050, "2026-09-28": 759050, "2026-09-29": 863550, "2026-09-30": 863550,
+            "2026-10-01": 1595050, "2026-10-02": 2079550, "2026-10-03": 1395550, "2026-10-04": 930050, "2026-10-05": 835050, "2026-10-06": 920550, "2026-10-07": 1728050, "2026-10-08": 1709050, "2026-10-09": 1652050, "2026-10-10": 759050, "2026-10-11": 759050, "2026-10-12": 797050, "2026-10-13": 797050, "2026-10-14": 759050, "2026-10-15": 759050, "2026-10-16": 721050, "2026-10-17": 759050, "2026-10-18": 759050, "2026-10-19": 797050, "2026-10-20": 797050, "2026-10-21": 759050, "2026-10-22": 759050, "2026-10-23": 835050, "2026-10-24": 835050, "2026-10-25": 835050, "2026-10-26": 835050, "2026-10-27": 835050, "2026-10-28": 835050
+        };
+
+        const RAW_A_2A = {
+            "2026-03-01": 1148550, "2026-03-02": 1148550, "2026-03-03": 1148550, "2026-03-04": 1167550, "2026-03-05": 1167550, "2026-03-06": 1167550, "2026-03-07": 1148550, "2026-03-08": 1148550, "2026-03-09": 1148550, "2026-03-10": 1148550, "2026-03-11": 1167550, "2026-03-12": 1167550, "2026-03-13": 1167550, "2026-03-14": 1148550, "2026-03-15": 1148550, "2026-03-16": 1148550, "2026-03-17": 1148550, "2026-03-18": 1167550, "2026-03-19": 1167550, "2026-03-20": 1167550, "2026-03-21": 1148550, "2026-03-22": 1148550, "2026-03-23": 1148550, "2026-03-24": 1148550, "2026-03-25": 1167550, "2026-03-26": 1177050, "2026-03-27": 1177050, "2026-03-28": 1177050, "2026-03-29": 1205550, "2026-03-30": 1205550, "2026-03-31": 1234050,
+            "2026-04-01": 1433550, "2026-04-02": 1243550, "2026-04-03": 1196050, "2026-04-04": 1196050, "2026-04-05": 1243550, "2026-04-06": 1243550, "2026-04-07": 1196050, "2026-04-08": 1243550, "2026-04-09": 1196050, "2026-04-10": 1196050, "2026-04-11": 1196050, "2026-04-12": 1243550, "2026-04-13": 1196050, "2026-04-14": 1196050, "2026-04-15": 1243550, "2026-04-16": 1196050, "2026-04-17": 1196050, "2026-04-18": 1196050, "2026-04-19": 1196050, "2026-04-20": 1196050, "2026-04-21": 1158050, "2026-04-22": 1158050, "2026-04-23": 1196050, "2026-04-24": 1196050, "2026-04-25": 1196050, "2026-04-26": 1585550, "2026-04-27": 1243550, "2026-04-28": 1310050, "2026-04-29": 1538050, "2026-04-30": 1547550,
+            "2026-05-01": 1500050, "2026-05-02": 1443050, "2026-05-03": 1281550, "2026-05-04": 1063050, "2026-05-05": 1091550, "2026-05-06": 968050, "2026-05-07": 892050, "2026-05-08": 892050, "2026-05-09": 863550, "2026-05-10": 863550, "2026-05-11": 825550, "2026-05-12": 892050, "2026-05-13": 863550, "2026-05-14": 863550, "2026-05-15": 825550, "2026-05-16": 825550, "2026-05-17": 863550, "2026-05-18": 863550, "2026-05-19": 863550, "2026-05-20": 892050, "2026-05-21": 968050, "2026-05-22": 1234050, "2026-05-23": 968050, "2026-05-24": 863550, "2026-05-25": 863550, "2026-05-26": 863550, "2026-05-27": 863550, "2026-05-28": 825550, "2026-05-29": 863550, "2026-05-30": 892050, "2026-05-31": 892050,
+            "2026-06-01": 825550, "2026-06-02": 892050, "2026-06-03": 1253050, "2026-06-04": 1082050, "2026-06-05": 825550, "2026-06-06": 825550, "2026-06-07": 968050, "2026-06-08": 825550, "2026-06-09": 825550, "2026-06-10": 892050, "2026-06-11": 825550, "2026-06-12": 825550, "2026-06-13": 825550, "2026-06-14": 863550, "2026-06-15": 892050, "2026-06-16": 825550, "2026-06-17": 863550, "2026-06-18": 825550, "2026-06-19": 825550, "2026-06-20": 825550, "2026-06-21": 825550, "2026-06-22": 825550, "2026-06-23": 825550, "2026-06-24": 825550, "2026-06-25": 825550, "2026-06-26": 825550, "2026-06-27": 863550, "2026-06-28": 863550, "2026-06-29": 825550, "2026-06-30": 825550,
+            "2026-07-01": 892050, "2026-07-02": 854050, "2026-07-03": 854050, "2026-07-04": 854050, "2026-07-05": 854050, "2026-07-06": 939550, "2026-07-07": 854050, "2026-07-08": 854050, "2026-07-09": 854050, "2026-07-10": 892050, "2026-07-11": 892050, "2026-07-12": 892050, "2026-07-13": 854050, "2026-07-14": 854050, "2026-07-15": 892050, "2026-07-16": 968050, "2026-07-17": 968050, "2026-07-18": 968050, "2026-07-19": 968050, "2026-07-20": 968050, "2026-07-21": 968050, "2026-07-22": 968050, "2026-07-23": 1110550, "2026-07-24": 996550, "2026-07-25": 1120050, "2026-07-26": 1148550, "2026-07-27": 1025050, "2026-07-28": 1025050, "2026-07-29": 1243550, "2026-07-30": 1025050, "2026-07-31": 1025050,
+            "2026-08-01": 1196050, "2026-08-02": 1025050, "2026-08-03": 996550, "2026-08-04": 996550, "2026-08-05": 996550, "2026-08-06": 968050, "2026-08-07": 996550, "2026-08-08": 996550, "2026-08-09": 996550, "2026-08-10": 968050, "2026-08-11": 996550, "2026-08-12": 996550, "2026-08-13": 996550, "2026-08-14": 1272050, "2026-08-15": 1034550, "2026-08-16": 939550, "2026-08-17": 892050, "2026-08-18": 892050, "2026-08-19": 892050, "2026-08-20": 854050, "2026-08-21": 854050, "2026-08-22": 854050, "2026-08-23": 825550, "2026-08-24": 863550, "2026-08-25": 863550, "2026-08-26": 825550, "2026-08-27": 825550, "2026-08-28": 825550, "2026-08-29": 825550, "2026-08-30": 825550, "2026-08-31": 825550,
+            "2026-09-01": 825550, "2026-09-02": 825550, "2026-09-03": 825550, "2026-09-04": 825550, "2026-09-05": 825550, "2026-09-06": 825550, "2026-09-07": 825550, "2026-09-08": 825550, "2026-09-09": 825550, "2026-09-10": 825550, "2026-09-11": 825550, "2026-09-12": 825550, "2026-09-13": 825550, "2026-09-14": 825550, "2026-09-15": 825550, "2026-09-16": 825550, "2026-09-17": 825550, "2026-09-18": 854050, "2026-09-19": 892050, "2026-09-20": 892050, "2026-09-21": 892050, "2026-09-22": 2041550, "2026-09-23": 2155550, "2026-09-24": 1937050, "2026-09-25": 1262550, "2026-09-26": 1186550, "2026-09-27": 863550, "2026-09-28": 863550, "2026-09-29": 968050, "2026-09-30": 968050,
+            "2026-10-01": 1680550, "2026-10-02": 2155550, "2026-10-03": 1490550, "2026-10-04": 1025050, "2026-10-05": 930050, "2026-10-06": 1025050, "2026-10-07": 1813550, "2026-10-08": 1794550, "2026-10-09": 1737550, "2026-10-10": 863550, "2026-10-11": 863550, "2026-10-12": 892050, "2026-10-13": 892050, "2026-10-14": 863550, "2026-10-15": 863550, "2026-10-16": 825550, "2026-10-17": 863550, "2026-10-18": 863550, "2026-10-19": 892050, "2026-10-20": 892050, "2026-10-21": 863550, "2026-10-22": 863550, "2026-10-23": 939550, "2026-10-24": 939550, "2026-10-25": 939550, "2026-10-26": 939550, "2026-10-27": 939550, "2026-10-28": 939550
+        };
+
+        const RAW_A_2A1C_C = {
+            "2026-03-01": 569050, "2026-03-02": 569050, "2026-03-03": 569050, "2026-03-04": 588050, "2026-03-05": 588050, "2026-03-06": 588050, "2026-03-07": 569050, "2026-03-08": 569050, "2026-03-09": 569050, "2026-03-10": 569050, "2026-03-11": 588050, "2026-03-12": 588050, "2026-03-13": 588050, "2026-03-14": 569050, "2026-03-15": 569050, "2026-03-16": 569050, "2026-03-17": 569050, "2026-03-18": 588050, "2026-03-19": 588050, "2026-03-20": 588050, "2026-03-21": 569050, "2026-03-22": 569050, "2026-03-23": 569050, "2026-03-24": 569050, "2026-03-25": 588050, "2026-03-26": 531050, "2026-03-27": 531050, "2026-03-28": 531050, "2026-03-29": 550050, "2026-03-30": 550050, "2026-03-31": 569050,
+            "2026-04-01": 721050, "2026-04-02": 578550, "2026-04-03": 540550, "2026-04-04": 540550, "2026-04-05": 578550, "2026-04-06": 578550, "2026-04-07": 540550, "2026-04-08": 578550, "2026-04-09": 540550, "2026-04-10": 540550, "2026-04-11": 540550, "2026-04-12": 578550, "2026-04-13": 540550, "2026-04-14": 540550, "2026-04-15": 578550, "2026-04-16": 540550, "2026-04-17": 540550, "2026-04-18": 540550, "2026-04-19": 540550, "2026-04-20": 540550, "2026-04-21": 512050, "2026-04-22": 512050, "2026-04-23": 540550, "2026-04-24": 540550, "2026-04-25": 540550, "2026-04-26": 835050, "2026-04-27": 578550, "2026-04-28": 626050, "2026-04-29": 882550, "2026-04-30": 977550,
+            "2026-05-01": 1034550, "2026-05-02": 987050, "2026-05-03": 863550, "2026-05-04": 702050, "2026-05-05": 721050, "2026-05-06": 626050, "2026-05-07": 578550, "2026-05-08": 578550, "2026-05-09": 550050, "2026-05-10": 550050, "2026-05-11": 521550, "2026-05-12": 578550, "2026-05-13": 550050, "2026-05-14": 550050, "2026-05-15": 521550, "2026-05-16": 521550, "2026-05-17": 550050, "2026-05-18": 550050, "2026-05-19": 550050, "2026-05-20": 578550, "2026-05-21": 626050, "2026-05-22": 825550, "2026-05-23": 626050, "2026-05-24": 550050, "2026-05-25": 550050, "2026-05-26": 550050, "2026-05-27": 550050, "2026-05-28": 521550, "2026-05-29": 550050, "2026-05-30": 578550, "2026-05-31": 578550,
+            "2026-06-01": 521550, "2026-06-02": 578550, "2026-06-03": 844550, "2026-06-04": 721050, "2026-06-05": 521550, "2026-06-06": 521550, "2026-06-07": 626050, "2026-06-08": 521550, "2026-06-09": 521550, "2026-06-10": 578550, "2026-06-11": 521550, "2026-06-12": 521550, "2026-06-13": 521550, "2026-06-14": 550050, "2026-06-15": 578550, "2026-06-16": 521550, "2026-06-17": 550050, "2026-06-18": 521550, "2026-06-19": 521550, "2026-06-20": 521550, "2026-06-21": 521550, "2026-06-22": 521550, "2026-06-23": 521550, "2026-06-24": 521550, "2026-06-25": 521550, "2026-06-26": 521550, "2026-06-27": 550050, "2026-06-28": 550050, "2026-06-29": 521550, "2026-06-30": 521550,
+            "2026-07-01": 578550, "2026-07-02": 540550, "2026-07-03": 540550, "2026-07-04": 540550, "2026-07-05": 540550, "2026-07-06": 607050, "2026-07-07": 540550, "2026-07-08": 540550, "2026-07-09": 540550, "2026-07-10": 578550, "2026-07-11": 578550, "2026-07-12": 578550, "2026-07-13": 540550, "2026-07-14": 540550, "2026-07-15": 578550, "2026-07-16": 626050, "2026-07-17": 626050, "2026-07-18": 626050, "2026-07-19": 626050, "2026-07-20": 626050, "2026-07-21": 626050, "2026-07-22": 626050, "2026-07-23": 740050, "2026-07-24": 654550, "2026-07-25": 740050, "2026-07-26": 768550, "2026-07-27": 673550, "2026-07-28": 673550, "2026-07-29": 835050, "2026-07-30": 673550, "2026-07-31": 673550,
+            "2026-08-01": 806550, "2026-08-02": 673550, "2026-08-03": 654550, "2026-08-04": 654550, "2026-08-05": 654550, "2026-08-06": 626050, "2026-08-07": 654550, "2026-08-08": 654550, "2026-08-09": 654550, "2026-08-10": 626050, "2026-08-11": 654550, "2026-08-12": 654550, "2026-08-13": 654550, "2026-08-14": 854050, "2026-08-15": 683050, "2026-08-16": 607050, "2026-08-17": 578550, "2026-08-18": 578550, "2026-08-19": 578550, "2026-08-20": 540550, "2026-08-21": 540550, "2026-08-22": 540550, "2026-08-23": 521550, "2026-08-24": 550050, "2026-08-25": 550050, "2026-08-26": 521550, "2026-08-27": 521550, "2026-08-28": 521550, "2026-08-29": 521550, "2026-08-30": 521550, "2026-08-31": 521550,
+            "2026-09-01": 521550, "2026-09-02": 521550, "2026-09-03": 521550, "2026-09-04": 521550, "2026-09-05": 521550, "2026-09-06": 521550, "2026-09-07": 521550, "2026-09-08": 521550, "2026-09-09": 521550, "2026-09-10": 521550, "2026-09-11": 521550, "2026-09-12": 521550, "2026-09-13": 521550, "2026-09-14": 521550, "2026-09-15": 521550, "2026-09-16": 521550, "2026-09-17": 521550, "2026-09-18": 540550, "2026-09-19": 578550, "2026-09-20": 578550, "2026-09-21": 578550, "2026-09-22": 1433550, "2026-09-23": 1519050, "2026-09-24": 1357550, "2026-09-25": 854050, "2026-09-26": 797050, "2026-09-27": 550050, "2026-09-28": 550050, "2026-09-29": 626050, "2026-09-30": 626050,
+            "2026-10-01": 1167550, "2026-10-02": 1519050, "2026-10-03": 1025050, "2026-10-04": 673550, "2026-10-05": 607050, "2026-10-06": 673550, "2026-10-07": 1262550, "2026-10-08": 1253050, "2026-10-09": 1205550, "2026-10-10": 550050, "2026-10-11": 550050, "2026-10-12": 578550, "2026-10-13": 578550, "2026-10-14": 550050, "2026-10-15": 550050, "2026-10-16": 521550, "2026-10-17": 550050, "2026-10-18": 550050, "2026-10-19": 578550, "2026-10-20": 578550, "2026-10-21": 550050, "2026-10-22": 550050, "2026-10-23": 607050, "2026-10-24": 607050, "2026-10-25": 607050, "2026-10-26": 607050, "2026-10-27": 607050, "2026-10-28": 607050
+        };
+
+        const RAW_A_3A = {
+            "2026-03-01": 996550, "2026-03-02": 996550, "2026-03-03": 996550, "2026-03-04": 1015550, "2026-03-05": 1015550, "2026-03-06": 1015550, "2026-03-07": 996550, "2026-03-08": 996550, "2026-03-09": 996550, "2026-03-10": 996550, "2026-03-11": 1015550, "2026-03-12": 1015550, "2026-03-13": 1015550, "2026-03-14": 996550, "2026-03-15": 996550, "2026-03-16": 996550, "2026-03-17": 996550, "2026-03-18": 1015550, "2026-03-19": 1015550, "2026-03-20": 1015550, "2026-03-21": 996550, "2026-03-22": 996550, "2026-03-23": 996550, "2026-03-24": 996550, "2026-03-25": 1015550, "2026-03-26": 1025050, "2026-03-27": 1025050, "2026-03-28": 1025050, "2026-03-29": 1053550, "2026-03-30": 1053550, "2026-03-31": 1082050,
+            "2026-04-01": 1281550, "2026-04-02": 1091550, "2026-04-03": 1044050, "2026-04-04": 1044050, "2026-04-05": 1091550, "2026-04-06": 1091550, "2026-04-07": 1044050, "2026-04-08": 1091550, "2026-04-09": 1044050, "2026-04-10": 1044050, "2026-04-11": 1044050, "2026-04-12": 1091550, "2026-04-13": 1044050, "2026-04-14": 1044050, "2026-04-15": 1091550, "2026-04-16": 1044050, "2026-04-17": 1044050, "2026-04-18": 1044050, "2026-04-19": 1044050, "2026-04-20": 1044050, "2026-04-21": 1006050, "2026-04-22": 1006050, "2026-04-23": 1044050, "2026-04-24": 1044050, "2026-04-25": 1044050, "2026-04-26": 1433550, "2026-04-27": 1091550, "2026-04-28": 1158050, "2026-04-29": 1424050, "2026-04-30": 1471550,
+            "2026-05-01": 1462050, "2026-05-02": 1414550, "2026-05-03": 1243550, "2026-05-04": 1025050, "2026-05-05": 1053550, "2026-05-06": 930050, "2026-05-07": 863550, "2026-05-08": 863550, "2026-05-09": 825550, "2026-05-10": 825550, "2026-05-11": 787550, "2026-05-12": 863550, "2026-05-13": 825550, "2026-05-14": 825550, "2026-05-15": 787550, "2026-05-16": 787550, "2026-05-17": 825550, "2026-05-18": 825550, "2026-05-19": 825550, "2026-05-20": 863550, "2026-05-21": 930050, "2026-05-22": 1196050, "2026-05-23": 930050, "2026-05-24": 825550, "2026-05-25": 825550, "2026-05-26": 825550, "2026-05-27": 825550, "2026-05-28": 787550, "2026-05-29": 825550, "2026-05-30": 863550, "2026-05-31": 863550,
+            "2026-06-01": 787550, "2026-06-02": 863550, "2026-06-03": 1224550, "2026-06-04": 1044050, "2026-06-05": 787550, "2026-06-06": 787550, "2026-06-07": 930050, "2026-06-08": 787550, "2026-06-09": 787550, "2026-06-10": 863550, "2026-06-11": 787550, "2026-06-12": 787550, "2026-06-13": 787550, "2026-06-14": 825550, "2026-06-15": 863550, "2026-06-16": 787550, "2026-06-17": 825550, "2026-06-18": 787550, "2026-06-19": 787550, "2026-06-20": 787550, "2026-06-21": 787550, "2026-06-22": 787550, "2026-06-23": 787550, "2026-06-24": 787550, "2026-06-25": 787550, "2026-06-26": 787550, "2026-06-27": 825550, "2026-06-28": 825550, "2026-06-29": 787550, "2026-06-30": 787550,
+            "2026-07-01": 854050, "2026-07-02": 816050, "2026-07-03": 816050, "2026-07-04": 816050, "2026-07-05": 816050, "2026-07-06": 901550, "2026-07-07": 816050, "2026-07-08": 816050, "2026-07-09": 816050, "2026-07-10": 854050, "2026-07-11": 854050, "2026-07-12": 854050, "2026-07-13": 816050, "2026-07-14": 816050, "2026-07-15": 854050, "2026-07-16": 930050, "2026-07-17": 930050, "2026-07-18": 930050, "2026-07-19": 930050, "2026-07-20": 930050, "2026-07-21": 930050, "2026-07-22": 930050, "2026-07-23": 1072550, "2026-07-24": 958550, "2026-07-25": 1082050, "2026-07-26": 1110550, "2026-07-27": 987050, "2026-07-28": 987050, "2026-07-29": 1205550, "2026-07-30": 987050, "2026-07-31": 987050,
+            "2026-08-01": 1167550, "2026-08-02": 987050, "2026-08-03": 958550, "2026-08-04": 958550, "2026-08-05": 958550, "2026-08-06": 930050, "2026-08-07": 958550, "2026-08-08": 958550, "2026-08-09": 958550, "2026-08-10": 930050, "2026-08-11": 958550, "2026-08-12": 958550, "2026-08-13": 958550, "2026-08-14": 1234050, "2026-08-15": 996550, "2026-08-16": 901550, "2026-08-17": 854050, "2026-08-18": 854050, "2026-08-19": 854050, "2026-08-20": 816050, "2026-08-21": 816050, "2026-08-22": 816050, "2026-08-23": 787550, "2026-08-24": 825550, "2026-08-25": 825550, "2026-08-26": 787550, "2026-08-27": 787550, "2026-08-28": 787550, "2026-08-29": 787550, "2026-08-30": 787550, "2026-08-31": 787550,
+            "2026-09-01": 787550, "2026-09-02": 787550, "2026-09-03": 787550, "2026-09-04": 787550, "2026-09-05": 787550, "2026-09-06": 787550, "2026-09-07": 787550, "2026-09-08": 787550, "2026-09-09": 787550, "2026-09-10": 787550, "2026-09-11": 787550, "2026-09-12": 787550, "2026-09-13": 787550, "2026-09-14": 787550, "2026-09-15": 787550, "2026-09-16": 787550, "2026-09-17": 787550, "2026-09-18": 816050, "2026-09-19": 854050, "2026-09-20": 854050, "2026-09-21": 854050, "2026-09-22": 2003550, "2026-09-23": 2127050, "2026-09-24": 1899050, "2026-09-25": 1224550, "2026-09-26": 1148550, "2026-09-27": 825550, "2026-09-28": 825550, "2026-09-29": 930050, "2026-09-30": 930050,
+            "2026-10-01": 1652050, "2026-10-02": 2127050, "2026-10-03": 1452550, "2026-10-04": 996550, "2026-10-05": 892050, "2026-10-06": 987050, "2026-10-07": 1785050, "2026-10-08": 1756550, "2026-10-09": 1699550, "2026-10-10": 825550, "2026-10-11": 825550, "2026-10-12": 863550, "2026-10-13": 863550, "2026-10-14": 825550, "2026-10-15": 825550, "2026-10-16": 787550, "2026-10-17": 825550, "2026-10-18": 825550, "2026-10-19": 863550, "2026-10-20": 863550, "2026-10-21": 825550, "2026-10-22": 825550, "2026-10-23": 901550, "2026-10-24": 901550, "2026-10-25": 901550, "2026-10-26": 901550, "2026-10-27": 901550, "2026-10-28": 901550
+        };
+
+        // --- Logic & State ---
+
+        const generatePriceData = () => {
+            const data = {};
+            const startDate = new Date(2026, 2, 1);
+            const endDate = new Date(2026, 9, 29); // 10월 28일까지 포함
+
+            for (let d = new Date(startDate); d < endDate; d.setDate(d.getDate() + 1)) {
+                const year = d.getFullYear();
+                const month = String(d.getMonth() + 1).padStart(2, '0');
+                const day = String(d.getDate()).padStart(2, '0');
+                const dateStr = `${year}-${month}-${day}`;
+
+                // Product A
+                const priceA_2A = RAW_A_2A[dateStr];
+                const priceA_2A1C_C = RAW_A_2A1C_C[dateStr];
+                const priceA_3A = RAW_A_3A[dateStr];
+                let productA = {};
+                if (priceA_2A) {
+                    productA = {
+                        "2A": priceA_2A * 2,
+                        "2A1C-A": priceA_2A * 2,
+                        "2A1C-C": priceA_2A1C_C * 1,
+                        "3A": priceA_3A * 3
+                    };
+                }
+
+                // Product B
+                const priceB_2A = RAW_B_2A[dateStr];
+                const priceB_2A1C_C = RAW_B_2A1C_C[dateStr];
+                const priceB_3A = RAW_B_3A[dateStr];
+                let productB = {};
+                if (priceB_2A) {
+                    productB = {
+                        "2A": priceB_2A * 2,
+                        "2A1C-A": priceB_2A * 2,
+                        "2A1C-C": priceB_2A1C_C * 1,
+                        "2A2C-A": priceB_2A * 2,
+                        "2A2C-C": (priceB_2A1C_C * 2) + 130000,
+                        "3A": priceB_3A * 3
+                    };
+                }
+
+                data[dateStr] = {
+                    "ProductA": productA,
+                    "ProductB": productB
+                };
+            }
+            return data;
+        };
+
+        const PRICE_DATA = generatePriceData();
+
+        // State initialization
+        let state = {
+            productType: 'ProductB',
+            occupancy: '2A',
+            currentMonth: new Date(2026, 2, 1), // March 2026
+            selectedDateInfo: null
+        };
+
+        // Helper: Find cheapest month
+        const jumpToCheapestMonth = () => {
+            let minPrice = Infinity;
+            let targetDate = null;
+
+            Object.entries(PRICE_DATA).forEach(([dateStr, products]) => {
+                const productData = products[state.productType];
+                if (!productData) return;
+
+                const breakdown = getPriceBreakdownForSearch(products, state.productType, state.occupancy);
+                if (breakdown && breakdown.adultUnit > 0) {
+                    if (breakdown.adultUnit < minPrice) {
+                        minPrice = breakdown.adultUnit;
+                        targetDate = new Date(dateStr);
+                    }
+                }
             });
-            const targetPage = document.getElementById(pageId);
-            if (targetPage) {
-                targetPage.classList.add('active');
-                window.scrollTo(0, 0);
-            }
-        }
 
-        // This is called by the buttons
-        function showPage(pageId) {
-            setVisiblePage(pageId);
-            // We push the new pageId to the history
-            history.pushState({ page: pageId }, '', `#${pageId}`);
-        }
-
-        // When the history changes (back/forward button), this event is triggered
-        window.addEventListener('popstate', function(event) {
-            // If the state is null, it means we went back before the first pushState.
-            // In that case, we show the main page.
-            if (event.state === null) {
-                setVisiblePage('main-page');
-            } else {
-                setVisiblePage(event.state.page);
+            if (targetDate) {
+                state.currentMonth = new Date(targetDate.getFullYear(), targetDate.getMonth(), 1);
             }
-        });
-        
-        // On initial load, we want to replace the current history entry
-        // with one for our main page. This prevents the back button
-        // from leaving the site on the first click.
-        history.replaceState({ page: 'main-page' }, '', '#main-page');
+        };
+
+        const getPriceBreakdownForSearch = (products, pType, occ) => {
+            const dayData = products[pType];
+            if (!dayData || !dayData['2A']) return null;
+
+            let adultTotal = 0;
+            let adultCount = 2;
+
+            if (occ === '2A') {
+                adultTotal = dayData['2A'] || 0;
+                adultCount = 2;
+            } else if (occ === '3A') {
+                adultTotal = dayData['3A'] || 0;
+                adultCount = 3;
+            } else if (occ === '2A1C') {
+                adultTotal = dayData['2A1C-A'] || 0;
+                adultCount = 2;
+            } else if (occ === '2A2C') {
+                adultTotal = dayData['2A2C-A'] || 0;
+                adultCount = 2;
+            }
+
+            const adultUnit = adultCount > 0 ? adultTotal / adultCount : 0;
+            return { adultUnit };
+        };
+
+        const getRuleDescription = () => {
+            const desc = {
+                ProductA: {
+                    "2A": "성인 2인 기본가(조식포함)",
+                    "2A1C": "성인 2+아동 1 (조식/엑스트라침대 포함)",
+                    "3A": "성인 3인 (조식/엑스트라침대 포함)"
+                },
+                ProductB: {
+                    "2A": "슈퍼 디럭스 씨뷰(조식포함)",
+                    "2A1C": "성인 2+아동 1 (조식포함)",
+                    "2A2C": "성인 2+아동 2 (조식/엑스트라침대 포함)",
+                    "3A": "성인 3인 (조식/엑스트라침대 포함)"
+                }
+            };
+            return desc[state.productType]?.[state.occupancy] || "옵션을 선택해주세요";
+        };
+
+        const getPriceBreakdown = (dateStr, type) => {
+            const dayData = PRICE_DATA[dateStr]?.[state.productType];
+            if (!dayData || !dayData['2A']) return null;
+
+            let adultTotal = 0;
+            let childTotal = 0;
+            let adultCount = 2;
+            let childCount = 0;
+
+            if (type === '2A') {
+                adultTotal = dayData['2A'] || 0;
+                adultCount = 2;
+            } else if (type === '3A') {
+                adultTotal = dayData['3A'] || 0;
+                adultCount = 3;
+            } else if (type === '2A1C') {
+                adultTotal = dayData['2A1C-A'] || 0;
+                childTotal = dayData['2A1C-C'] || 0;
+                adultCount = 2;
+                childCount = 1;
+            } else if (type === '2A2C') {
+                adultTotal = dayData['2A2C-A'] || 0;
+                childTotal = dayData['2A2C-C'] || 0;
+                adultCount = 2;
+                childCount = 2;
+            }
+
+            const adultUnit = adultCount > 0 ? adultTotal / adultCount : 0;
+            const childUnit = childCount > 0 ? childTotal / childCount : 0;
+
+            return {
+                adultTotal,
+                childTotal,
+                totalPrice: adultTotal + childTotal,
+                adultCount,
+                childCount,
+                adultUnit,
+                childUnit
+            };
+        };
+
+        const getPriceStyle = (price) => {
+            if (!price) return 'bg-white';
+            if (price < 800000) return 'bg-green-100 border-green-200 hover:bg-green-200';
+            if (price < 900000) return 'bg-blue-100 border-blue-200 hover:bg-blue-200';
+            if (price < 1000000) return 'bg-amber-100 border-amber-200 hover:bg-amber-200';
+            return 'bg-rose-100 border-rose-200 hover:bg-rose-200';
+        };
+
+        const formatPrice = (price) => price ? price.toLocaleString() : '0';
+
+        // --- Render Functions ---
+
+        // Global Action Handlers attached to window
+        window.setProductType = (type) => {
+            state.productType = type;
+            // Product A does not support 2A2C, reset if needed
+            if (type === 'ProductA' && state.occupancy === '2A2C') {
+                state.occupancy = '2A';
+            }
+            jumpToCheapestMonth();
+            render();
+        };
+
+        window.setOccupancy = (occ) => {
+            state.occupancy = occ;
+            jumpToCheapestMonth();
+            render();
+        };
+
+        window.prevMonth = () => {
+            const newDate = new Date(state.currentMonth.getFullYear(), state.currentMonth.getMonth() - 1, 1);
+            if (newDate < new Date(2026, 2, 1)) return;
+            state.currentMonth = newDate;
+            render();
+        };
+
+        window.nextMonth = () => {
+            const newDate = new Date(state.currentMonth.getFullYear(), state.currentMonth.getMonth() + 1, 1);
+            if (newDate > new Date(2026, 9, 1)) return;
+            state.currentMonth = newDate;
+            render();
+        };
+
+        window.openPopup = (dateStr) => {
+            const breakdown = getPriceBreakdown(dateStr, state.occupancy);
+            if (!breakdown || breakdown.totalPrice === 0) return;
+            state.selectedDateInfo = { dateStr, breakdown };
+            render();
+        };
+
+        window.closePopup = () => {
+            state.selectedDateInfo = null;
+            render();
+        };
+
+        const render = () => {
+            const app = document.getElementById('app');
+
+            // --- Generate Calendar Days Data ---
+            const year = state.currentMonth.getFullYear();
+            const month = state.currentMonth.getMonth();
+            const firstDayOfWeek = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const calendarItems = [];
+
+            // 1. Min Price in Month
+            let minPriceInMonth = Infinity;
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+                const breakdown = getPriceBreakdown(dateStr, state.occupancy);
+                if (breakdown && breakdown.adultUnit > 0) {
+                    if (breakdown.adultUnit < minPriceInMonth) minPriceInMonth = breakdown.adultUnit;
+                }
+            }
+
+            // 2. Empty Slots
+            for (let i = 0; i < firstDayOfWeek; i++) {
+                calendarItems.push({ type: 'empty' });
+            }
+
+            // 3. Days
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+                const dateObj = new Date(year, month, day);
+                const dayOfWeek = dateObj.getDay();
+                const isOverLimit = dateObj > new Date(2026, 9, 28);
+                const breakdown = getPriceBreakdown(dateStr, state.occupancy);
+                const hasPrice = !isOverLimit && breakdown && breakdown.totalPrice > 0;
+                const isCheapest = hasPrice && breakdown.adultUnit === minPriceInMonth;
+
+                calendarItems.push({
+                    type: 'day',
+                    day,
+                    dayOfWeek,
+                    dateStr,
+                    breakdown,
+                    hasPrice,
+                    disabled: isOverLimit,
+                    isCheapest
+                });
+            }
+
+            // --- HTML Template Construction ---
+            let html = '';
+
+            // 1. Header & Navigation
+            html += `
+                <div class="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+                    <div class="bg-[#0077B6] px-4 py-3 text-white">
+                        <h1 class="text-sm font-bold opacity-90">안지모지 x 내일투어 공동구매</h1>
+                        <p class="text-xs opacity-70">푸켓·카오락 (2026년 3월~10월 출발)</p>
+                    </div>
+
+                    <div class="p-3 grid grid-cols-2 gap-2">
+                         <button onclick="setProductType('ProductB')" class="py-2 text-[11px] font-bold rounded-lg border transition-all duration-200 ${state.productType === 'ProductB' ? 'bg-slate-800 text-white border-slate-800 shadow-md' : 'bg-white text-slate-400 border-slate-200 hover:border-slate-300'}">
+                            다이아몬드 클리프 푸켓
+                        </button>
+                        <button onclick="setProductType('ProductA')" class="py-2 text-[11px] font-bold rounded-lg border transition-all duration-200 ${state.productType === 'ProductA' ? 'bg-slate-800 text-white border-slate-800 shadow-md' : 'bg-white text-slate-400 border-slate-200 hover:border-slate-300'}">
+                            아바니 플러스 카오락
+                        </button>
+                    </div>
+
+                    <div class="px-3 pb-3 flex gap-2 overflow-x-auto no-scrollbar scroll-smooth">
+                        ${['2A', '2A1C', '2A2C', '3A'].map(opt => {
+                if (opt === '2A2C' && state.productType === 'ProductA') return '';
+                const label = opt === '2A' ? '성인2' : opt === '2A1C' ? '성인2+아동1' : opt === '2A2C' ? '성인2+아동2' : '성인3';
+                const isActive = state.occupancy === opt;
+                return `
+                                <button onclick="setOccupancy('${opt}')" class="flex-none px-3 py-1.5 rounded-full text-[11px] font-medium border transition-colors duration-200 whitespace-nowrap ${isActive ? 'bg-[#0077B6] text-white border-[#0077B6] shadow-sm' : 'bg-slate-100 text-slate-500 border-transparent hover:bg-slate-200'}">
+                                    ${label}
+                                </button>
+                            `;
+            }).join('')}
+                    </div>
+                </div>
+            `;
+
+            // 2. Info Box
+            html += `
+                <div class="mx-3 mt-3 mb-2 p-3 bg-blue-50/80 rounded-xl border border-blue-100 flex items-start gap-2 shadow-sm">
+                    ${ICONS.info}
+                    <span class="text-[11px] font-bold text-blue-900 leading-tight pt-0.5">
+                        ${getRuleDescription()}
+                    </span>
+                </div>
+            `;
+
+            // 3. Calendar Container
+            const isPrevDisabled = state.currentMonth < new Date(2026, 3, 1);
+            const isNextDisabled = state.currentMonth > new Date(2026, 8, 1);
+
+            html += `
+                <div class="mx-3 bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="flex items-center justify-between p-4 border-b border-slate-100 bg-white">
+                        <button onclick="prevMonth()" class="p-1 rounded-full transition-colors ${isPrevDisabled ? 'opacity-30 cursor-not-allowed' : 'hover:bg-slate-100'}">
+                            ${ICONS.chevronLeft}
+                        </button>
+                        <span class="font-bold text-base text-slate-800">
+                            ${state.currentMonth.getFullYear()}년 ${state.currentMonth.getMonth() + 1}월
+                        </span>
+                        <button onclick="nextMonth()" class="p-1 rounded-full transition-colors ${isNextDisabled ? 'opacity-30 cursor-not-allowed' : 'hover:bg-slate-100'}">
+                            ${ICONS.chevronRight}
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-7 border-b border-slate-50 bg-slate-50/50">
+                        ${['일', '월', '화', '수', '목', '금', '토'].map((d, i) =>
+                `<div class="py-2.5 text-center text-[11px] font-bold ${i === 0 ? 'text-red-500' : i === 6 ? 'text-blue-500' : 'text-slate-400'}">${d}</div>`
+            ).join('')}
+                    </div>
+
+                    <div class="grid grid-cols-7 bg-slate-100 gap-[1px]">
+            `;
+
+            // 4. Calendar Cells
+            calendarItems.forEach(item => {
+                if (item.type === 'empty') {
+                    html += `<div class="bg-white min-h-[70px]"></div>`;
+                    return;
+                }
+
+                const isSunday = item.dayOfWeek === 0;
+                const isSaturday = item.dayOfWeek === 6;
+                const isSelectable = item.hasPrice && !item.disabled;
+                const bgClass = item.hasPrice ? getPriceStyle(item.breakdown.adultUnit) : 'bg-white';
+                const cheapestStyle = item.isCheapest ? 'ring-1 ring-inset ring-[#0077B6] z-10' : '';
+                const dayColor = isSunday ? 'text-red-500' : isSaturday ? 'text-blue-500' : 'text-slate-600';
+                const opacityClass = item.disabled ? 'bg-slate-50 opacity-50' : '';
+                const clickAttr = isSelectable ? `onclick="openPopup('${item.dateStr}')"` : '';
+                const cursorClass = isSelectable ? 'cursor-pointer active:scale-95' : 'cursor-default';
+
+                html += `
+                    <div ${clickAttr} class="${bgClass} min-h-[70px] p-1 flex flex-col justify-between transition-all duration-200 relative group ${cursorClass} ${opacityClass} ${cheapestStyle}">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[11px] font-bold ml-0.5 ${dayColor}">${item.day}</span>
+                            ${item.isCheapest ? `<span class="text-[8px] bg-[#0077B6] text-white px-1 py-0.5 rounded-sm font-bold tracking-tighter">BEST</span>` : ''}
+                        </div>
+                        ${item.hasPrice ? `
+                            <div class="text-right mt-1">
+                                <div class="text-[11px] font-bold tracking-tighter transition-colors ${item.breakdown.adultUnit >= 1000000 ? 'text-rose-700' : 'text-slate-800'}">
+                                    ${formatPrice(item.breakdown.adultUnit)}
+                                </div>
+                                <div class="text-[9px] text-slate-500 font-medium text-right opacity-80">원</div>
+                            </div>
+                        ` : `
+                            <div class="h-full flex items-end justify-end">
+                                <span class="text-[9px] text-slate-200 font-light pr-1 pb-1">-</span>
+                            </div>
+                        `}
+                    </div>
+                `;
+            });
+
+            html += `
+                    </div>
+                </div>
+                <p class="mt-6 text-center text-[10px] text-slate-400 px-10 leading-relaxed pb-20">
+                    * 달력에 표시된 금액은 <span class="text-slate-600 font-bold">성인 1인 기준</span>입니다.<br />
+                    (날짜를 클릭하면 전체 상세 요금을 확인할 수 있습니다)
+                </p>
+            `;
+
+            // 5. Popup (Modal)
+            if (state.selectedDateInfo) {
+                const info = state.selectedDateInfo;
+                const bd = info.breakdown;
+                const productName = state.productType === 'ProductA' ? '아바니 플러스' : '다이아몬드 클리프';
+
+                html += `
+                    <div class="fixed inset-0 z-50 flex items-end justify-center sm:items-center">
+                        <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px]" onclick="closePopup()"></div>
+                        <div class="bg-white w-full max-w-md mx-auto rounded-t-2xl sm:rounded-2xl shadow-2xl z-50 overflow-hidden animate-[slideUp_0.2s_ease-out]">
+                            <div class="bg-[#0077B6] px-5 py-4 flex justify-between items-center">
+                                <div>
+                                    <p class="text-blue-100 text-xs font-medium mb-0.5">${productName}</p>
+                                    <h3 class="text-white font-bold text-lg">${info.dateStr}</h3>
+                                </div>
+                                <button onclick="closePopup()" class="text-white/80 hover:text-white bg-white/10 hover:bg-white/20 rounded-full p-1.5 transition-colors">
+                                    ${ICONS.x}
+                                </button>
+                            </div>
+
+                            <div class="p-5">
+                                <div class="flex items-center gap-2 mb-6">
+                                    <span class="px-2.5 py-1 bg-blue-50 text-[#0077B6] text-xs font-bold rounded-md">${state.occupancy}</span>
+                                    <span class="text-sm text-slate-600 font-medium">선택하신 인원 구성</span>
+                                </div>
+
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span class="text-slate-500">성인 (${bd.adultCount}인)</span>
+                                        <div class="text-right">
+                                            <span class="text-slate-400 text-xs mr-2">1인당 ${formatPrice(bd.adultUnit)}원</span>
+                                            <span class="font-medium text-slate-700">${formatPrice(bd.adultTotal)}원</span>
+                                        </div>
+                                    </div>
+                                    ${bd.childCount > 0 ? `
+                                        <div class="flex flex-col">
+                                            <div class="flex justify-between items-center text-sm">
+                                                <span class="text-slate-500">아동 (${bd.childCount}인)</span>
+                                                <div class="text-right">
+                                                    <span class="text-slate-400 text-xs mr-2">1인당 ${formatPrice(bd.childUnit)}원</span>
+                                                    <span class="font-medium text-slate-700">${formatPrice(bd.childTotal)}원</span>
+                                                </div>
+                                            </div>
+                                            ${(state.occupancy === '2A2C' && state.productType === 'ProductB') ? `
+                                                <p class="text-right text-[10px] text-slate-400 mt-0.5">* 간이침대 추가비용(130,000원) 포함</p>
+                                            ` : ''}
+                                        </div>
+                                    ` : ''}
+                                </div>
+
+                                <div class="border-t border-slate-100 pt-4 flex justify-between items-end">
+                                    <span class="text-slate-600 font-bold text-sm">총 합계</span>
+                                    <span class="text-2xl font-bold text-[#0077B6]">${formatPrice(bd.totalPrice)}<span class="text-base font-medium ml-1 text-slate-500">원</span></span>
+                                </div>
+
+                                <button onclick="closePopup()" class="w-full mt-6 bg-slate-900 text-white py-3.5 rounded-xl font-bold text-sm hover:bg-slate-800 transition-colors">
+                                    확인 완료
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        @keyframes slideUp {
+                            from { transform: translateY(100%); }
+                            to { transform: translateY(0); }
+                        }
+                    </style>
+                `;
+            }
+
+            app.innerHTML = html;
+        };
+
+        // Initialize (Start of script)
+        jumpToCheapestMonth(); // Initial jump
+        render();
+
     </script>
 </body>
+
 </html>
